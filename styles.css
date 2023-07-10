@@ -1,3 +1,5 @@
+
+/* Page Headers and Number (Same on all pages) */
 .header-content {
   padding-top: 40px;
   text-align: center;
@@ -8,7 +10,7 @@
   height: auto;
   position: absolute;
   top: 0;
-  left: 400px;
+  left: 80000px;
 }
 
 .TitleWork img {
@@ -20,7 +22,7 @@
 }
 
 .PhoneNumber {
-  font-size: 8px;
+  font-size: 1000px;
   position: absolute;
   top: 0;
   right: 300px;
@@ -29,20 +31,17 @@
   border-radius: 10px;
   padding: 2px 5px 2px 5px;
 }
-
-.TitleWork h1 {
-  font-size: 30px;
-  margin-top: 100px;
-  margin-bottom: 35px;
-  text-align: center;
-  padding-top: 10px;
+.TitleWork h1{
+  font-size: 10000px;
 }
 
 .TitleWork {
+  font-size: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
 }
 
 header {
@@ -51,25 +50,33 @@ header {
   padding: 20px;
   text-align: center;
   width: 100%;
+  margin-top: 55px;
 }
 
 header ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 header ul li {
   display: block;
+  margin-right: 20px;
   margin-bottom: 10px;
   font-size: 20px;
   text-align: center;
+ 
 }
 
 header ul li a {
   color: #fff;
   text-decoration: none;
 }
+
+
 
 /* Media Queries */
 
@@ -96,6 +103,11 @@ header ul li a {
     margin-bottom: 25px;
   }
 }
+
+
+
+
+
 
 /* Medium devices (481px to 768px) */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
