@@ -76,7 +76,23 @@ header ul li a {
   text-decoration: none;
 }
 
+.H1moving{
+  margin-top: 50px;
+}
 
+.H1moving h1{
+  margin-left: 60px;
+}
+
+.H1moving p{
+  font-size: 25px;
+  text-align: left;
+}
+
+.H1moving h1{
+  font-size: 50px;
+  text-align: center;
+}
 
 /* Media Queries */
 
