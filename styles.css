@@ -44,10 +44,10 @@
   
 }
 
+/* Add styles for the header and header links */
 header {
   background-color: #333;
   color: #fff;
-  padding: 20px;
   text-align: center;
   width: 100%;
   margin-top: 55px;
@@ -63,18 +63,26 @@ header ul {
 }
 
 header ul li {
-  display: block;
   margin-right: 20px;
   margin-bottom: 10px;
-  font-size: 20px;
+  font-size: 22px;
   text-align: center;
- 
 }
 
 header ul li a {
   color: #fff;
   text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  border: 2px solid #333;
+  
 }
+
+header ul li.active a {
+  background-color: rgba(255, 232, 23, 0.904);
+}
+
+
 
 .H1moving{
   margin-top: 50px;
@@ -119,10 +127,6 @@ header ul li a {
     margin-bottom: 25px;
   }
 }
-
-
-
-
 
 
 /* Medium devices (481px to 768px) */
