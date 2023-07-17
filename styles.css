@@ -1,4 +1,5 @@
 
+
 /* Page Headers and Number (Same on all pages) */
 .header-content {
   padding-top: 40px;
@@ -10,7 +11,7 @@
   height: auto;
   position: absolute;
   top: 0;
-  left: 80000px;
+  left: 400px;
 }
 
 .TitleWork img {
@@ -22,7 +23,7 @@
 }
 
 .PhoneNumber {
-  font-size: 1000px;
+  font-size: 10px;
   position: absolute;
   top: 0;
   right: 300px;
@@ -32,7 +33,7 @@
   padding: 2px 5px 2px 5px;
 }
 .TitleWork h1{
-  font-size: 10000px;
+  font-size: 100px;
 }
 
 .TitleWork {
@@ -82,9 +83,14 @@ header ul li.active a {
   background-color: rgba(255, 232, 23, 0.904);
 }
 
+.image-container{
+  
+}
 
+/* Moving */
 
 .H1moving{
+  font-family: 'bebas neue';
   margin-top: 50px;
 }
 
@@ -93,6 +99,7 @@ header ul li.active a {
 }
 
 .H1moving p{
+
   font-size: 25px;
   text-align: left;
 }
@@ -102,9 +109,16 @@ header ul li.active a {
   text-align: center;
 }
 
+.image-container{
+  font-family: 'bebas neue';
+  margin-right: 20px;
+  margin-bottom: 10px
+  
+}
+
 /* Media Queries */
 
-/* Small devices (up to 480px) */
+/* Small devices (up to 480px) 
 @media only screen and (max-width: 480px) {
   .header-logo img {
     width: 80px;
@@ -129,7 +143,8 @@ header ul li.active a {
 }
 
 
-/* Medium devices (481px to 768px) */
+
+/* Medium devices (481px to 768px) 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .header-logo img {
     width: 120px;
@@ -153,7 +168,7 @@ header ul li.active a {
   }
 }
 
-/* Large devices (769px and above) */
+/* Large devices (769px and above)
 @media only screen and (min-width: 769px) {
   .header-logo img {
     width: 160px;
@@ -175,4 +190,4 @@ header ul li.active a {
     margin-top: 120px;
     margin-bottom: 40px;
   }
-}
+} */
