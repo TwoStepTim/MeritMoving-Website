@@ -11,79 +11,104 @@
   height: auto;
   position: absolute;
   top: 0;
-  left: 400px;
+  left: 360px;
 }
-
-.TitleWork img {
-  width: 100px;
+.CEO img{
+  width: 175px;
   height: auto;
   position: absolute;
   top: 30px;
-  right: 400px;
+  right: 375px;
 }
 
 .PhoneNumber {
   font-size: 10px;
   position: absolute;
-  top: 0;
-  right: 300px;
-  color: rgb(239, 239, 239);
-  background-color: #333;
-  border-radius: 10px;
-  padding: 2px 5px 2px 5px;
-}
-.TitleWork h1{
-  font-size: 100px;
+  top: 5px;
+  right: 200px;
+  color:rgba(255, 196, 0, 0.774);
+  background-color: #000000;
+  border-radius: 30px;
+  padding: 0px 5px 0px 5px;
+  width:250px; /* Set the width to a percentage value */ 
+  overflow: hidden;
+  height: auto; /* Automatically adjust height to fit content */
+  font-family: 'Fjalla One', sans-serif;
 }
 
+.InstagramIcon img{
+  height:auto;
+  width: 45px; 
+  position: absolute;
+  top: 240px;
+  left: 400px;
+  
+}
+.FacebookIcon img{
+  height:auto;
+  width: 50px; 
+  position: absolute;
+  top: 238px;
+  left: 340px;
+  
+}
 .TitleWork {
-  font-size: 10px;
+  
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+ 
 }
+.TitleWork h1{
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 40px;
 
+  margin-top : 140px; 
+  margin-right: 175px;
+}
 /* Add styles for the header and header links */
-header {
+nav {
   background-color: #333;
   color: #fff;
   text-align: center;
   width: 100%;
-  margin-top: 55px;
+  margin-top: 70px;
 }
 
-header ul {
+nav ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-header ul li {
+nav ul li {
   margin-right: 20px;
-  margin-bottom: 10px;
   font-size: 22px;
   text-align: center;
 }
 
-header ul li a {
+nav ul li a {
+  font-family: 'Fjalla One', sans-serif;
   color: #fff;
   text-decoration: none;
   display: inline-block;
-  padding: 10px 20px;
-  border: 2px solid #333;
+  padding: 5px 20px;
+  
   
 }
-
-header ul li.active a {
-  background-color: rgba(255, 232, 23, 0.904);
+nav ul li a:hover{
+  background-color: rgba(248, 199, 37, 0.774);
+  transition: 2s;
 }
 
-.image-container{
+nav ul li.active a {
+  background-color: rgba(248, 199, 37, 0.774);
+}
+
+/*.image-container{
   
 }
 
