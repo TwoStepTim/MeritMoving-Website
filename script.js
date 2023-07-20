@@ -1,43 +1,16 @@
-$(document).ready(function() {
-    // Function to load the content of the selected page
-    function loadPageContent(url) {
-      $.ajax({
-        url: url,
-        type: 'GET',
-        success: function(response) {
-          $('#page-content').html(response);
-        },
-        error: function() {
-          $('#page-content').html('<p>Error loading content.</p>');
-        }
-      });
-    }
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("myVideo");
+  var overlay = document.querySelector(".video-overlay");
+
+  var videoHeight = video.offsetHeight;
+  var windowHeight = window.innerHeight;
+  var maxScroll = document.body.offsetHeight - windowHeight;
   
-    var pageLinks = $('header ul li a');
+  function updateVideo() {
+    var scrollPercentage = (window.scrollY / maxScroll) * 100;
+    overlay.style.opacity = 1 - scrollPercentage / 50;
+  }
   
-    // Function to set the active link
-    function setActiveLink(linkElement) {
-      pageLinks.parent().removeClass('active');
-      linkElement.parent().addClass('active');
-    }
-  
-    // Get the current URL path
-    var currentPath = window.location.pathname;
-  
-    // Set the active class on the initially loaded page
-    var currentPageLink = $('header ul li a[href="' + currentPath + '"]');
-    if (currentPageLink.length > 0) {
-      setActiveLink(currentPageLink);
-      loadPageContent(currentPath); // Load the content of the initially active page
-    }
-  
-    // Add click event listeners to each page link
-    pageLinks.on('click', function(event) {
-      event.preventDefault();
-      setActiveLink($(this));
-      var nextPage = $(this).attr('href');
-      loadPageContent(nextPage); // Load the content of the selected page
-      window.history.pushState(null, null, nextPage); // Update the URL without page reload
-    });
-  });
-  
+  window.addEventListener("scroll", updateVideo);
+});
+
