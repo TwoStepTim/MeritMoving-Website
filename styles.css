@@ -265,5 +265,29 @@ footer {
   margin-bottom: 10px;
 }
 
-/* Media Queries */
+/* FQA */
 
+.QuestionsAsked{
+ text-align: center;
+  color: black;
+ 
+}
+.QuestionsAsked h1{
+font-size: 60px;
+font-family: 'Roboto Condensed', sans-serif;
+}
+
+.QuestionsAsked h2{
+  font-size: 30px;
+  margin-top: 100px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+}
+.QuestionsAsked p{
+font-size: 20px;
+width: 700px;
+margin-left: 300px;
+font-family: 'Open Sans', sans-serif;
+}
+
+  

@@ -152,10 +152,10 @@ footer {
 }
 .footer-column h3 {
   font-family: 'Roboto Condensed', sans-serif;
-  color: #ffffff;
+  color: white;
   font-size: 50px;
   position: absolute;
-  top: 750px;
+  top: 1750px;
   
 }
 .footer-column p {
@@ -215,13 +215,13 @@ footer {
   height: auto;
   position: absolute;
  left: 480px;
- top: 920px;
+ top: 1916px;
 }
 .InstagramIconColor img {
   height: auto;
   width: 50px;
   position: absolute;
-  top: 1130px;
+  top: 2126px;
   left: 200px;
 }
 
@@ -229,7 +229,7 @@ footer {
   height: auto;
   width: 50px;
   position: absolute;
-  top: 1130px;
+  top: 2126px;
   left: 140px;
 }
 
