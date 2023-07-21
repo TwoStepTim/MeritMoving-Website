@@ -263,9 +263,20 @@ footer {
   font-family: 'bebas neue';
   margin-right: 20px;
   margin-bottom: 10px;
+<<<<<<< Updated upstream
 }
 
 /* FQA */
+=======
+  
+}
+
+.image-container img{
+  width: 50px;
+}
+
+/* Media Queries */
+>>>>>>> Stashed changes
 
 .QuestionsAsked{
  text-align: center;
