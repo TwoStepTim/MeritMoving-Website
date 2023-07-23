@@ -240,62 +240,78 @@ footer {
 
 /* Moving */
 
-.H1moving {
-  font-family: 'Bebas Neue', sans-serif;
-  margin-top: 50px;
-}
 
 .H1moving h1 {
   margin-left: 60px;
-}
-
-.H1moving p {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #333;
-  text-align: center;
-  
-}
-
-.H1moving h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: 50px;
   font-size: 50px;
   text-align: center;
 }
 
-.image-container {
-  font-family: 'bebas neue';
-  margin-right: 20px;
-  margin-bottom: 10px;
-<<<<<<< Updated upstream
+.H1moving h2 {
+  margin-left: 60px;
+  font-family: 'Bebas Neue', sans-serif;
+  margin-top: 600px;
+  font-size: 50px;
+  text-align: center;
 }
 
-.moving-img1 img {
-  width: 250px;
+.H1moving p {
+  font-family: Bebas Neue, sans-serif;
+  font-size: 30px;
+  text-align: left;
   position: absolute;
-  left: 500px;
+  right: 300px;
+  width: 500px;
 
+}
+
+.H1moving p2 {
+  position: absolute;
+  font-family: Bebas Neue, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  right: 750px;
+  width: 300px;
+  
+}
+
+
+
+.moving-img1 img {
+  position: absolute;
+  top: 1100px;
+  width: 400px;
+  right: 950px;
   
 }
 
 .moving-img2 img {
-  width: 250px;
   position: absolute;
-  left: 250px;
-
+  right: 1200px;
+  width: 300px;
+  top: 1900px;
   
 }
+
+.moving-img3 img {
+  position: absolute;
+  right: 750px;
+  width: 350px;
+  top: 1900px;
+}
+
+
 
 /* FQA */
-=======
   
-}
 
 .image-container img{
   width: 50px;
 }
 
 /* Media Queries */
->>>>>>> Stashed changes
 
 .QuestionsAsked{
  text-align: center;
