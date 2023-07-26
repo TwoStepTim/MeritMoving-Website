@@ -154,7 +154,7 @@ footer {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   font-size: 50px;
-  position: absolute;
+  position: relative;
   top: 750px;
   
 }
@@ -213,12 +213,14 @@ footer {
 .CEO img {
   width: 175px;
   height: auto;
-  position: absolute;
+  
+  position: relative;
  left: 480px;
- top: 920px;
+ top: 0px;
 }
 .InstagramIconColor img {
   height: auto;
+  display: flex;
   width: 50px;
   position: absolute;
   top: 1130px;
@@ -228,6 +230,7 @@ footer {
 .FacebookIconColor img {
   height: auto;
   width: 50px;
+  display: flex;
   position: absolute;
   top: 1130px;
   left: 140px;
@@ -288,6 +291,13 @@ font-size: 20px;
 width: 700px;
 margin-left: 300px;
 font-family: 'Open Sans', sans-serif;
+margin-bottom: 100px;
 }
-
+.question:not(:first-child) {
+  display: none;
+}
+.question {
+  display: none;
+  padding: 20px;
+}
   

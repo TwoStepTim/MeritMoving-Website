@@ -152,10 +152,10 @@ footer {
 }
 .footer-column h3 {
   font-family: 'Roboto Condensed', sans-serif;
-  color: white;
+  color: #ffffff;
   font-size: 50px;
   position: absolute;
-  top: 1850px;
+  top: 750px;
   
 }
 .footer-column p {
@@ -215,25 +215,35 @@ footer {
   height: auto;
   position: absolute;
  left: 480px;
- top: 2016px;
+ top: 1020px;
 }
 .InstagramIconColor img {
-  height: auto;
+  height: 100vh;
   width: 50px;
   position: absolute;
-  top: 2226px;
+  top: 1230px;
   left: 200px;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease;
 }
 
 .FacebookIconColor img {
-  height: auto;
+  height: 100vh;
   width: 50px;
   position: absolute;
-  top: 2226px;
+  top: 1230px;
   left: 140px;
+  transform: translateX(-50%);
+  transition: transform 0.5s ease;
 }
 
+.FacebookIconColor:hover img{
+  transform: translate(-50%, 20%);
+}
 
+.InstagramIconColor:hover img{
+  transform: translate(-50%, 20%);
+}
 
 
 

@@ -44,7 +44,7 @@ video {
 }
 
 .header-logo img {
-  width: 150px;
+  width: 12vw;
   height: auto;
   position: absolute;
   top: 0;
@@ -52,7 +52,7 @@ video {
 }
 
 .PhoneNumber {
-  font-size: 10px;
+  font-size: 1vw;
   position: absolute;
   top: 5px;
   right: 200px;
@@ -60,7 +60,7 @@ video {
   background-color: #000000;
   border-radius: 30px;
   padding: 0px 5px 0px 5px;
-  width: 300px;
+  width: auto;
 
   height: auto;
   font-family: 'Fjalla One', sans-serif;
@@ -69,17 +69,17 @@ video {
 .InstagramIcon img {
   height: auto;
   width: 45px;
-  position: absolute;
-  top: 373px;
-  left: 400px;
+  position: relative;
+  top:82px;
+  left: 15px;
 }
 
 .FacebookIcon img {
   height: auto;
   width: 50px;
-  position: absolute;
-  top: 370px;
-  left: 340px;
+  position: relative;
+  top:30px;
+  right: 40px;
 }
 
 .TitleWork {
@@ -91,9 +91,11 @@ video {
 
 .TitleWork h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 60px;
+  font-size: 5vw;
+  position: relative;
   font-style: oblique;
- margin-bottom: 100px;
+  top: 7vw;
+  margin-bottom: 100px;
   margin-right: 30px;
 }
 
@@ -115,7 +117,7 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 2vw;
   text-align: center;
 }
 
@@ -154,15 +156,17 @@ footer {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
   font-size: 50px;
-  position: absolute;
-  top: 750px;
+  position: relative;
+  bottom: 4vw;
   
 }
 .footer-column p {
 
   color: #ffffff;
-  font-size: 20px;
-  
+  font-size: 30px;
+  margin-bottom: px;
+  position: relative;
+  bottom: 5vw;
 }
 .footer-column ul {
   list-style: none;
@@ -175,23 +179,32 @@ footer {
 }
 .footer-column.hr {
   border-left: 1px solid #ffffff;
+  
 }
 
 .Callus h4{
-  font-size: 20px ;
+  font-size: 2vw ;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
+  position: relative;
+  bottom: 5vw;
 }
 
 .Callus p{
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 35px ;
+  font-size: 3vw ;
   
 }
 .area-we-cover li {
   
   color: #ffffff;
   
+  
+}
+.area-we-cover{
+  position: relative;
+  bottom: 5vw;
+
 }
 
 .grid-container {
@@ -211,26 +224,227 @@ footer {
   opacity: 100%;
 }
 .CEO img {
-  width: 175px;
+  width: 12vw;
   height: auto;
-  position: absolute;
- left: 480px;
- top: 920px;
+  position: relative;
+  bottom: 16.8vw;
+  right: 15vw;
 }
 .InstagramIconColor img {
   height: auto;
-  width: 50px;
-  position: absolute;
-  top: 1130px;
-  left: 200px;
+  width: 3vw;
+  position: relative;
+  bottom: 17vw;
+  right: 35vw;
+  
 }
 
 .FacebookIconColor img {
   height: auto;
-  width: 50px;
+  width: 3vw;
+  position: relative;
+  bottom: 14vw;
+  right: 40vw;
+}
+
+/* Rest of your CSS remains the same */
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s ease;
+  z-index: 99;
+}
+
+.sidebar.open {
+  left: 0; /* Show the sidebar when open class is added */
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 20px;
+  display: block;
+}
+
+.sidebar nav li {
+  margin-bottom: 20px;
+  font-size: 40px;
+ 
+}
+
+.sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hamburger styles */
+.hamburger {
   position: absolute;
-  top: 1130px;
-  left: 140px;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 999;
+  display: none; /* Initially hidden on larger screens */
+}
+
+/* Show hamburger on smaller screens */
+@media (max-width: 420px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide the sidebar when hamburger is not clicked */
+  .sidebar {
+    left: -250px;
+  }
+  .video-overlay header {
+    display: none;
+  }
+  .CEO{
+    display: none;
+  }
+  .footer-column h3 {
+    position: absolute;
+    top: 250px;
+  }
+  .FacebookIconColor{
+    position: absolute;
+    bottom: 900px;
+   
+    left: 0px;
+  }
+  .InstagramIconColor{
+    position: absolute;
+    bottom: 900px;
+    left: 0px;
+  }
+  .TitleWork h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1vw;
+    
+    
+  }
+  .header-logo img {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+  .PhoneNumber {
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    right: 200px;
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide the sidebar when hamburger is not clicked */
+  .sidebar {
+    left: -250px;
+  }
+  .video-overlay header {
+    display: none;
+  }
+  .CEO{
+    display: none;
+  }
+  .footer-column h3 {
+    position: absolute;
+    top: 450px;
+  }
+  .FacebookIconColor{
+    position: absolute;
+    bottom: 900px;
+    left: 0px;
+  }
+  .InstagramIconColor{
+    position: absolute;
+    bottom: 900px;
+    left: 0px;
+  }
+  .TitleWork h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-style: oblique;
+   margin-top: 200px;
+    margin-right: 30px;
+  }
+  .header-logo img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+  .PhoneNumber {
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    right: 200px;
+  }
+}
+@media (min-width: 760px) and (max-width: 1080px){
+
+  /* Hide the sidebar when hamburger is not clicked */
+  .CEO{
+    position:absolute;
+    position: absolute;
+  right: 1200px;
+  bottom: 700px;
+  }
+  .footer-column h3 {
+    position: absolute;
+    top: 570px;
+  }
+  .FacebookIconColor{
+    position: absolute;
+    bottom: 700px;
+    left: 0px;
+  }
+  .InstagramIconColor{
+    position: absolute;
+    bottom: 700px;
+    left: 0px;
+  }
+  .TitleWork h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-style: oblique;
+   margin-top: 200px;
+    margin-right: 30px;
+  }
+  .header-logo img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+  .PhoneNumber {
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    right: 200px;
+  }
+}
+@media (min-width: 1400px) {
+
+  /* Hide the sidebar when hamburger is not clicked */
+  
 }
 
 

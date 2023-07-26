@@ -2,6 +2,7 @@
 <html>
 <head>
   <title>MeritMoving</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="HomePageStyle.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +37,11 @@
         </a>
       </div>
       <header>
+        <!-- Hamburger icon to open the sidebar on smaller screens -->
+        <label class="hamburger" for="sidebar-checkbox">&#9776;</label>
+
+        <!-- Sidebar navigation -->
+        <input type="checkbox" id="sidebar-checkbox" style="display: none;">
         <nav>
           <ul >
             <li><a href="Home.html">Home</a></li>
@@ -54,13 +60,29 @@
 
 
 <body>
- 
-    <!-- The content of each page will be loaded here -->
-    <div id="page-content"></div>
+  <label class="hamburger" for="sidebar-checkbox">&#9776;</label>
 
-    <!-- jQuery library -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="script.js"></script>
+  <div class="sidebar">
+    <!-- Sidebar navigation -->
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Moving.html">Moving</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- The content of each page will be loaded here -->
+  <div id="page-content"></div>
+
+  <!-- jQuery library -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="script.js"></script>
 </body>
 <footer>
     

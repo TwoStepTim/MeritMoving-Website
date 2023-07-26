@@ -152,10 +152,10 @@ footer {
 }
 .footer-column h3 {
   font-family: 'Roboto Condensed', sans-serif;
-  color: white;
+  color: #ffffff;
   font-size: 50px;
   position: absolute;
-  top: 1850px;
+  top: 750px;
   
 }
 .footer-column p {
@@ -215,13 +215,13 @@ footer {
   height: auto;
   position: absolute;
  left: 480px;
- top: 2016px;
+ top: 920px;
 }
 .InstagramIconColor img {
   height: auto;
   width: 50px;
   position: absolute;
-  top: 2226px;
+  top: 1130px;
   left: 200px;
 }
 
@@ -229,8 +229,157 @@ footer {
   height: auto;
   width: 50px;
   position: absolute;
-  top: 2226px;
+  top: 1130px;
   left: 140px;
+}
+
+/* Rest of your CSS remains the same */
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s ease;
+  z-index: 99;
+}
+
+.sidebar.open {
+  left: 0; /* Show the sidebar when open class is added */
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 20px;
+  display: block;
+}
+
+.sidebar nav li {
+  margin-bottom: 20px;
+  font-size: 40px;
+ 
+}
+
+.sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hamburger styles */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 999;
+  display: none; /* Initially hidden on larger screens */
+}
+
+/* Show hamburger on smaller screens */
+@media (max-width: 760px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide the sidebar when hamburger is not clicked */
+  .sidebar {
+    left: -250px;
+  }
+  .video-overlay header {
+    display: none;
+  }
+  .CEO{
+    display: none;
+  }
+  .footer-column h3 {
+    position: absolute;
+    top: 450px;
+  }
+  .FacebookIconColor{
+    position: absolute;
+    bottom: 900px;
+    left: 0px;
+  }
+  .InstagramIconColor{
+    position: absolute;
+    bottom: 900px;
+    left: 0px;
+  }
+  .TitleWork h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-style: oblique;
+   margin-top: 200px;
+    margin-right: 30px;
+  }
+  .header-logo img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+  .PhoneNumber {
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    right: 200px;
+  }
+}
+@media (min-width: 760px) and (max-width: 1080px){
+
+  /* Hide the sidebar when hamburger is not clicked */
+  .CEO{
+    position:absolute;
+    position: absolute;
+  right: 1200px;
+  bottom: 700px;
+  }
+  .footer-column h3 {
+    position: absolute;
+    top: 570px;
+  }
+  .FacebookIconColor{
+    position: absolute;
+    bottom: 700px;
+    left: 0px;
+  }
+  .InstagramIconColor{
+    position: absolute;
+    bottom: 700px;
+    left: 0px;
+  }
+  .TitleWork h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 60px;
+    font-style: oblique;
+   margin-top: 200px;
+    margin-right: 30px;
+  }
+  .header-logo img {
+    width: 150px;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 30px;
+  }
+  .PhoneNumber {
+    font-size: 10px;
+    position: absolute;
+    top: 15px;
+    right: 200px;
+  }
+}
+@media (min-width: 1900px) and (max-width: 2000px){
+
+  /* Hide the sidebar when hamburger is not clicked */
+  
 }
 
 
