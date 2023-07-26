@@ -306,25 +306,59 @@ footer {
   margin-top: 50px;
 }
 
-.H1moving h1 {
-  margin-left: 60px;
-}
 
 .H1moving p {
-  font-size: 25px;
+  position: relative;
+  font-size: 50px;
   text-align: left;
+  font-size: 25px;
+  margin-left: 50vw;
+  margin-right: 25vw;
+  left: 10vw;
 }
 
-.H1moving h1 {
-  font-size: 50px;
+
+.H1moving p2 {
+  position: relative;
+  font-size: 20px;
+  left: 42vw;
   text-align: center;
 }
 
-.image-container {
-  font-family: 'bebas neue';
-  margin-right: 20px;
-  margin-bottom: 10px;
+
+.H1moving h1 {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+
 }
+
+.H1moving h2 {
+  position: relative;
+  font-size: 50px;
+  text-align: center;
+
+}
+
+.moving-img1 {
+  position: relative;
+  top: 5vw;
+  left: 5vw;
+
+}
+
+.moving-img2 {
+  position: relative;
+  bottom: 20vw;
+  left: 37vw;
+}
+
+.moving-img3 {
+  position: relative;
+  bottom: 46vw;
+  left: 70vw;
+}
+
 
 /* FQA */
 
