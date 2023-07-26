@@ -332,6 +332,101 @@ footer {
     right: 200px;
   }
 }
+/* Styles for screens between 360px and 420px */
+@media (min-width: 360px) and (max-width: 420px) {
+  .header-logo img {
+    width: 12vw;
+    left: 15vw;
+  }
+
+  .PhoneNumber {
+    font-size: 1vw;
+    right: 5vw;
+  }
+
+  .InstagramIcon img {
+    top: 82px;
+    left: 15px;
+  }
+
+  .FacebookIcon img {
+    top: 30px;
+    right: 40px;
+  }
+
+  .TitleWork h1 {
+    font-size: 5vw;
+    top: 7vw;
+  }
+
+  nav ul li {
+    font-size: 2vw;
+  }
+
+  .footer-column h3 {
+    font-size: 6vw;
+    bottom: 4vw;
+  }
+
+  .footer-column p {
+    font-size: 3vw;
+    bottom: 5vw;
+  }
+
+  .Callus h4 {
+    font-size: 2vw;
+    bottom: 5vw;
+  }
+
+  .Callus p {
+    font-size: 3vw;
+  }
+
+  .area-we-cover {
+    bottom: 5vw;
+  }
+
+  .CEO img {
+    width: 12vw;
+    bottom: 16.8vw;
+    right: 15vw;
+  }
+
+  .InstagramIconColor img {
+    width: 3vw;
+    bottom: 17vw;
+    right: 35vw;
+  }
+
+  .FacebookIconColor img {
+    width: 3vw;
+    bottom: 14vw;
+    right: 40vw;
+  }
+
+  /* Additional styles specific to screen size between 360px and 420px */
+  .H1moving h1 {
+    margin-left: 30px;
+    font-size: 30px;
+  }
+
+  .QuestionsAsked h1 {
+    font-size: 40px;
+  }
+
+  .QuestionsAsked h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .QuestionsAsked p {
+    font-size: 15px;
+    width: 90vw;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+}
+
 @media (min-width: 760px) and (max-width: 1080px){
 
   /* Hide the sidebar when hamburger is not clicked */

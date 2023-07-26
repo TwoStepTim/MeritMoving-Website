@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>MeritMoving</title>
-  <link rel="stylesheet" href="ReviewStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -55,9 +55,28 @@
 
 
 <body>
+  <div class="ReviewsHeader">
+    <h1>Merit Moving Reviews</h1>
+    <p>See what our past clients have to say about Merit Moving!</p>
+  </div>
     <div class='sk-ww-google-reviews' data-embed-id='170154'></div><script src='https://widgets.sociablekit.com/google-reviews/widget.js' async defer></script>
     <!-- The content of each page will be loaded here -->
-    <div id="page-content"></div>
+    <label class="hamburger" for="sidebar-checkbox">&#9776;</label>
+
+  <div class="sidebar">
+    <!-- Sidebar navigation -->
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <nav>
+      <ul>
+        <li><a href="Home.html">Home</a></li>
+        <li><a href="Moving.html">Moving</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
 
     <!-- jQuery library -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -76,7 +95,9 @@
     </div>
     <div class="footer-column hr">
       <h3>Areas We Cover</h3>
-      <p>With our HQ based in Raleigh, we cover multiple surrounding cities, including:</p>
+      <div class="Area-we-cover-text">
+        <p>With our HQ based in Raleigh, we cover multiple surrounding cities, including:</p>
+      </div>
       <div class="area-we-cover">
         <div class="grid-container">
           <div class="item1"><h1>Cary</h1></div>

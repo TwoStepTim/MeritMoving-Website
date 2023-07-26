@@ -44,7 +44,7 @@ video {
 }
 
 .header-logo img {
-  width: 150px;
+  width: 12vw;
   height: auto;
   position: absolute;
   top: 0;
@@ -52,7 +52,7 @@ video {
 }
 
 .PhoneNumber {
-  font-size: 10px;
+  font-size: 1vw;
   position: absolute;
   top: 5px;
   right: 200px;
@@ -60,7 +60,7 @@ video {
   background-color: #000000;
   border-radius: 30px;
   padding: 0px 5px 0px 5px;
-  width: 300px;
+  width: auto;
 
   height: auto;
   font-family: 'Fjalla One', sans-serif;
@@ -69,17 +69,17 @@ video {
 .InstagramIcon img {
   height: auto;
   width: 45px;
-  position: absolute;
-  top: 373px;
-  left: 400px;
+  position: relative;
+  top:82px;
+  left: 15px;
 }
 
 .FacebookIcon img {
   height: auto;
   width: 50px;
-  position: absolute;
-  top: 370px;
-  left: 340px;
+  position: relative;
+  top:30px;
+  right: 40px;
 }
 
 .TitleWork {
@@ -91,9 +91,11 @@ video {
 
 .TitleWork h1 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 60px;
+  font-size: 5vw;
+  position: relative;
   font-style: oblique;
- margin-bottom: 100px;
+  top: 7vw;
+  margin-bottom: 100px;
   margin-right: 30px;
 }
 
@@ -115,7 +117,7 @@ nav ul {
 
 nav ul li {
   margin-right: 20px;
-  font-size: 22px;
+  font-size: 2vw;
   text-align: center;
 }
 
@@ -136,7 +138,6 @@ nav ul li.active a {
   background-color: rgba(248, 199, 37, 0.774);
 }
 
-
 footer {
   
   background-color: #636363;
@@ -155,14 +156,16 @@ footer {
   color: #ffffff;
   font-size: 50px;
   position: relative;
-  top: 750px;
+  bottom: 4vw;
   
 }
 .footer-column p {
 
   color: #ffffff;
-  font-size: 20px;
-  
+  font-size: 30px;
+  margin-bottom: px;
+  position: relative;
+  bottom: 5vw;
 }
 .footer-column ul {
   list-style: none;
@@ -175,23 +178,32 @@ footer {
 }
 .footer-column.hr {
   border-left: 1px solid #ffffff;
+  
 }
 
 .Callus h4{
-  font-size: 20px ;
+  font-size: 2vw ;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
+  position: relative;
+  bottom: 5vw;
 }
 
 .Callus p{
   font-family: 'Roboto Condensed', sans-serif;
-  font-size: 35px ;
+  font-size: 3vw ;
   
 }
 .area-we-cover li {
   
   color: #ffffff;
   
+  
+}
+.area-we-cover{
+  position: relative;
+  bottom: 5vw;
+
 }
 
 .grid-container {
@@ -211,31 +223,77 @@ footer {
   opacity: 100%;
 }
 .CEO img {
-  width: 175px;
+  width: 15vw;
   height: auto;
-  
   position: relative;
- left: 480px;
- top: 0px;
+  bottom: 20vw;
+  right: 17vw;
 }
 .InstagramIconColor img {
   height: auto;
-  display: flex;
-  width: 50px;
-  position: absolute;
-  top: 1130px;
-  left: 200px;
+  width: 4vw;
+  position: relative;
+  bottom: 30vw;
+  right: 35vw;
+  
 }
 
 .FacebookIconColor img {
   height: auto;
-  width: 50px;
-  display: flex;
-  position: absolute;
-  top: 1130px;
-  left: 140px;
+  width: 4vw;
+  position: relative;
+  bottom: 26vw;
+  right: 40vw;
 }
 
+/* Rest of your CSS remains the same */
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px; /* Initially hidden */
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  color: #fff;
+  transition: left 0.3s ease;
+  z-index: 99;
+}
+
+.sidebar.open {
+  left: 0; /* Show the sidebar when open class is added */
+}
+
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 40px 20px;
+  display: block;
+}
+
+.sidebar nav li {
+  margin-bottom: 20px;
+  font-size: 40px;
+ 
+}
+
+.sidebar nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Hamburger styles */
+.hamburger {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 999;
+  display: none; /* Initially hidden on larger screens */
+  color: white;
+}
 
 
 
@@ -243,78 +301,32 @@ footer {
 
 /* Moving */
 
+.H1moving {
+  font-family: 'bebas neue';
+  margin-top: 50px;
+}
 
 .H1moving h1 {
   margin-left: 60px;
-  font-family: 'Bebas Neue', sans-serif;
-  margin-top: 50px;
-  font-size: 50px;
-  text-align: center;
-}
-
-.H1moving h2 {
-  margin-left: 60px;
-  font-family: 'Bebas Neue', sans-serif;
-  margin-top: 600px;
-  font-size: 50px;
-  text-align: center;
 }
 
 .H1moving p {
-  font-family: Bebas Neue, sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   text-align: left;
-  position: absolute;
-  right: 300px;
-  width: 500px;
-
 }
 
-.H1moving p2 {
-  position: absolute;
-  font-family: Bebas Neue, sans-serif;
-  font-size: 20px;
+.H1moving h1 {
+  font-size: 50px;
   text-align: center;
-  right: 750px;
-  width: 300px;
-  
 }
 
-
-
-.moving-img1 img {
-  position: absolute;
-  top: 1100px;
-  width: 400px;
-  right: 950px;
-  
+.image-container {
+  font-family: 'bebas neue';
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
-
-.moving-img2 img {
-  position: absolute;
-  right: 1200px;
-  width: 300px;
-  top: 1900px;
-  
-}
-
-.moving-img3 img {
-  position: absolute;
-  right: 750px;
-  width: 350px;
-  top: 1900px;
-}
-
-
 
 /* FQA */
-  
-
-.image-container img{
-  width: 50px;
-}
-
-/* Media Queries */
 
 .QuestionsAsked{
  text-align: center;
@@ -334,8 +346,8 @@ font-family: 'Roboto Condensed', sans-serif;
 }
 .QuestionsAsked p{
 font-size: 20px;
-width: 700px;
-margin-left: 300px;
+width: 55vw;
+margin-left: 22vw;
 font-family: 'Open Sans', sans-serif;
 margin-bottom: 100px;
 }
@@ -345,5 +357,160 @@ margin-bottom: 100px;
 .question {
   display: none;
   padding: 20px;
+}
+
+
+
+/* Reviews */
+.ReviewsHeader h1{
+  font-size: 5vw;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.ReviewsHeader p{
+  font-size: 2vw;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+
+@media (min-width: 360px) and (max-width: 420px) {
+  .header-logo img {
+    width: 25vw;
+    left: 1vw;
+  }
+  .hamburger {
+    display: block;
+  }
+
+  /* Hide the sidebar when hamburger is not clicked */
+  .sidebar {
+    left: -250px;
+  }
+  .video-overlay header {
+    display: none;
+  }
+ .CEO{
+  display: none;
+ }
+  .PhoneNumber {
+    font-size: 1.5vw;
+    right: 20vw;
+  }
+
+  .InstagramIcon img {
+    display: none;
+  }
+
+  .FacebookIcon img {
+    display: none;
+  }
+
+  .TitleWork h1 {
+    font-size: 10vw;
+    top: 20vw;
+  }
+  .footer-columns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align-last: center;
+  }
+  .Area-we-cover-text{
+    position: relative;
+    width: 5vw;
+    left: 7vw;
+  }
+  .footer-column.hr{
+    border-left: 1px solid #636363;
+    text-align-last: center;
+  }
+
+  .footer-column h3 {
+    font-size: 10vw;
+    bottom: 25vw;
+    text-align: center;
+  }
+
+  .footer-column p {
+    font-size: 8vw;
+    bottom: 25vw;
+    width: 70vw;
+  }
+
+  .Callus h4 {
+    font-size: 10vw;
+    bottom: 30vw;
+  }
+
+  .Callus p {
+    font-size: 10vw;
+    bottom: 45vw;
+  }
+
+  .Area-we-cover-text{
+    color: burlywood;
+  }
+  .area-we-cover {
+    position: relative;
+    bottom: 5vw;
+    left: 1vw;
+    
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto 50vw ;
+    grid-gap: 1vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5vw;
+    
+  }
+  .InstagramIconColor img {
+    width: 15vw;
+    bottom: 225vw;
+    left: 15vw;
+  }
+
+  .FacebookIconColor img {
+    width: 15vw;
+    bottom: 210vw;
+    right: 20vw;
+  }
+
+  /* Additional styles specific to screen size between 360px and 420px */
+  .H1moving h1 {
+    margin-left: 30px;
+    font-size: 30px;
+  }
+
+  .QuestionsAsked h1 {
+    font-size: 40px;
+  }
+
+  .QuestionsAsked h2 {
+    font-size: 20px;
+    margin-top: 50px;
+  }
+
+  .QuestionsAsked p {
+    font-size: 15px;
+    width: 90vw;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  .ReviewsHeader h1{
+    font-size: 15vw;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .ReviewsHeader p{
+    font-size: 5vw;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
 }
   
