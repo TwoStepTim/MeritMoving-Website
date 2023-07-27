@@ -530,6 +530,25 @@ footer {
    }
  }
 
+  /* Gallery */
+
+  .grid-container-pic {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw ;
+    gap: 2vw;
+    margin-top: 10vw;
+    margin-left: 20vw;
+    grid-column-gap: 1vw;
+    margin-bottom: 5vw;
+    column-gap: 1vw;
+    
+  }
+  
+  .grid-container > div {
+    width: 5vw;
+    opacity: 100%;
+
+  }
 
 
 @media (min-width: 360px) and (max-width: 420px) {
