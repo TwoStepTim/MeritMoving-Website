@@ -15,8 +15,29 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 $(document).ready(function() {
-  // Toggle the sidebar when the hamburger is clicked
-  $(".hamburger").click(function() {
-    $(".sidebar").toggleClass("open");
+  var isAnimated = false;
+
+  $(window).scroll(function() {
+    if (!isAnimated) {
+      var meetTeamOffset = $('.MeetTeam').offset().top;
+      if ($(window).scrollTop() > meetTeamOffset - ($(window).height() / 2)) {
+        $('.MATT').addClass('fade-in-animation').css('opacity', 1);
+        setTimeout(function() {
+          $('.Dazz').addClass('fade-in-animation').css('opacity', 1);
+        }, 500); // Delay Dazz fade-in by 500 milliseconds
+        isAnimated = true;
+      }
+    }
   });
 });
+
+
+
+
+
+
+
+
+
+
+
