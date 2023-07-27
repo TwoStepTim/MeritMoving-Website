@@ -298,7 +298,6 @@ footer {
 
 
 
-
 /* Moving */
 
 .H1moving {
@@ -398,49 +397,138 @@ footer {
 /* FQA */
 
 .QuestionsAsked{
- text-align: center;
-  color: black;
+  text-align: center;
+   color: black;
+  
+ }
+ .QuestionsAsked h1{
+ font-size: 60px;
+ font-family: 'Roboto Condensed', sans-serif;
+ }
  
-}
-.QuestionsAsked h1{
-font-size: 60px;
-font-family: 'Roboto Condensed', sans-serif;
-}
-
-.QuestionsAsked h2{
-  font-size: 30px;
-  margin-top: 100px;
-  font-family: 'Roboto Condensed', sans-serif;
-
-}
-.QuestionsAsked p{
-font-size: 20px;
-width: 55vw;
-margin-left: 22vw;
-font-family: 'Open Sans', sans-serif;
-margin-bottom: 100px;
-}
-.question:not(:first-child) {
-  display: none;
-}
-.question {
-  display: none;
-  padding: 20px;
-}
-
-
-
-/* Reviews */
-.ReviewsHeader h1{
-  font-size: 5vw;
-  text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
-}
-.ReviewsHeader p{
-  font-size: 2vw;
-  text-align: center;
-  font-family: 'Open Sans', sans-serif;
-}
+ .QuestionsAsked h2{
+   font-size: 30px;
+   margin-top: 100px;
+   font-family: 'Roboto Condensed', sans-serif;
+ 
+ }
+ .QuestionsAsked p{
+   font-size: 20px;
+   width: 55vw;
+   margin-left: 22vw;
+   font-family: 'Open Sans', sans-serif;
+   margin-bottom: 100px;
+   text-align: center;
+ }
+ .question:not(:first-child) {
+   display: none;
+ }
+ .question {
+   display: none;
+   padding: 20px;
+ }
+ 
+ 
+ 
+ /* Reviews */
+ .ReviewsHeader h1{
+   font-size: 5vw;
+   text-align: center;
+   font-family: 'Roboto Condensed', sans-serif;
+ }
+ .ReviewsHeader p{
+   font-size: 2vw;
+   text-align: center;
+   font-family: 'Open Sans', sans-serif;
+ }
+ 
+ .Rev{
+   font-family: 'Open Sans', sans-serif;
+ }
+ 
+ 
+ /* About us */
+ 
+ .About-us h1{
+   font-family: 'Roboto Condensed', sans-serif;
+   margin-left: 10vw;
+ }
+ .About-us p{
+   font-family: 'Open Sans', sans-serif;
+   width: 50vw;
+   margin-left: 10vw;
+ }
+ .high-quality-Moving{
+   position: relative;
+   bottom: 20vw;
+   left: 65vw;
+ }
+ .MeetTeam{
+   position: relative;
+   bottom: 15vw;
+ }
+ .MeetTeam h1{
+   color: white;
+   text-align: center;
+   background-color:#333 ;
+   padding: 1vw;
+   font-family: 'Roboto Condensed', sans-serif;
+ }
+ .Dazz{
+   position: relative;
+   top: 1vw;
+   left: 30vw;
+ }
+ .MATT{
+   position: relative;
+   left: 10vw;
+   top: 1vw;
+ }
+ .Dazz, .MATT {
+   opacity: 0;
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .Dazz .overlay,
+ .MATT .overlay {
+   opacity: 0; /* Set initial opacity to 0 */
+   pointer-events: none; /* Prevent the overlay from blocking hover events on the image */
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.7);
+   color: #fff;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 18px;
+   transition: opacity 0.3s ease; /* Add transition for smooth fade in/out */
+ }
+ 
+ .Dazz:hover .overlay, .MATT:hover .overlay {
+   display: block;
+   opacity: 100;
+ }
+ 
+ .Dazz, .MATT {
+   opacity: 0;
+ }
+ 
+ .fade-in-animation {
+   animation: fadeIn 1.5s ease;
+ }
+ 
+ @keyframes fadeIn {
+   0% {
+     opacity: 0;
+   }
+   100% {
+     opacity: 1;
+   }
+ }
 
 
 
