@@ -344,6 +344,7 @@ footer {
   position: relative;
   top: 5vw;
   left: 5vw;
+  width: 1vw;
 
 }
 
@@ -351,12 +352,46 @@ footer {
   position: relative;
   bottom: 20vw;
   left: 37vw;
+  width: 1vw;
 }
 
 .moving-img3 {
   position: relative;
   bottom: 46vw;
   left: 70vw;
+  width: 1vw;
+}
+
+.movingtext h2{
+  font-family: 'bebas neue';
+  font-size: 35px;
+  text-align: center;
+}
+
+
+.movingtext {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  bottom: 45vw;
+  font-family: 'bebas neue';
+}
+
+.movingtext h1{
+  margin-left: 2vw;
+  margin-right: 2vw;
+  font-size: 20px;
+  text-align: center;
+
+}
+
+.movingtext p {
+  margin-left: 5vw;
+  margin-top: 2vw;
+  margin-right: 3vw;
+  font-size: 20px;
+  text-align: center;
+
 }
 
 
