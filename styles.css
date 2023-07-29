@@ -309,11 +309,11 @@ footer {
 .H1moving p {
   position: relative;
   font-size: 50px;
-  text-align: left;
+  text-align: center;
   font-size: 25px;
-  margin-left: 50vw;
+  margin-left: 25vw;
   margin-right: 25vw;
-  left: 10vw;
+  right: 1vw;
 }
 
 
@@ -323,6 +323,7 @@ footer {
   left: 43vw;
   bottom: 4vw;
   text-align: center;
+
 }
 
 
