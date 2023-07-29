@@ -320,14 +320,15 @@ footer {
 .H1moving p2 {
   position: relative;
   font-size: 20px;
-  left: 42vw;
+  left: 43vw;
+  bottom: 4vw;
   text-align: center;
 }
 
 
 .H1moving h1 {
   position: relative;
-  font-size: 50px;
+  font-size: 40px;
   text-align: center;
 
 }
@@ -336,6 +337,9 @@ footer {
   position: relative;
   font-size: 50px;
   text-align: center;
+  margin-top: 5vw;
+  right: 1vw;
+  margin-bottom: 100px;
 
 }
 
@@ -349,15 +353,15 @@ footer {
 
 .moving-img2 {
   position: relative;
-  bottom: 20vw;
-  left: 37vw;
+  bottom: 15vw;
+  left: 40vw;
   width: 1vw;
 }
 
 .moving-img3 {
   position: relative;
-  bottom: 46vw;
-  left: 70vw;
+  bottom: 32vw;
+  left: 75vw;
   width: 1vw;
 }
 
@@ -372,14 +376,16 @@ footer {
   position: relative;
   display: flex;
   justify-content: space-between;
-  bottom: 45vw;
+  bottom: 32vw;
   font-family: 'bebas neue';
+  margin-bottom: 100px;
 }
+
 
 .movingtext h1{
   margin-left: 2vw;
   margin-right: 2vw;
-  font-size: 20px;
+  font-size: 40px;
   text-align: center;
 
 }
@@ -398,11 +404,15 @@ footer {
   text-align: center;
   font-family: 'bebas neue';
   margin-bottom: 5vw;
-  bottom: 40vw;
+  bottom: 30vw;
+}
+
+.needatruck h1 {
+  font-size: 40px;
 }
 
 .needatruck p{
-  font-size: 20px;
+  font-size: 25px;
   margin-left: 16vw;
   margin-right: 16vw;
 }
@@ -412,20 +422,79 @@ footer {
   text-align: center;
   font-family: 'bebas neue';
   margin-bottom: 5vw;
-  bottom: 40vw;
+  bottom: 32vw;
+  margin-top: 7vw;
 
 }
 
 .manpower h1{
-font-size: 35px;
+font-size: 40px;
 }
 .manpower p{
-  font-size: 20px;
+  font-size: 30px;
   margin-left: 16vw;
   margin-right: 16vw;
 }
 
+.moving-img4{
+  position: relative;
+  bottom: 35vw;
+  left: 45vw;
+  width: 2vw;
+}
 
+
+.merittext2 h3{
+  position: relative;
+  text-align: center;
+  font-family: 'bebas neue';
+  margin-bottom: 5vw;
+  bottom: 36vw;
+  font-size: 30px;
+  left: .5vw;
+}
+
+.merittext3 p{
+  margin-top: 20px;
+}
+
+.merittext2 ul{
+  position: relative;
+  list-style-type: disc; /* Set the bullet style to 'disc', other options include 'circle', 'square', etc. */
+  padding-left: 47vw; /* Increase or decrease the left padding to move the list to the right */
+  font-family: 'bebas neue';
+  bottom: 40vw;
+  font-size: 25px;
+  right: .5vw;
+}
+
+.merittext3 {
+  position: relative;
+  text-align: center;
+  font-family: 'bebas neue';
+  margin-bottom: 5vw;
+  bottom: 39vw;
+  left: .5vw;
+
+}
+
+.merittext3 ul{
+  position: relative;
+  padding-left: 20px;
+  font-size: 25px;
+}
+
+.merittext3 h1{
+  margin-top: 100px;
+  margin-bottom: 20px;
+  font-size: 40px;
+}
+
+.merittext3 p{
+  margin-left: 15vw;
+  margin-right: 15vw;
+  font-size: 25px;
+}
 
 /* FQA */
 
