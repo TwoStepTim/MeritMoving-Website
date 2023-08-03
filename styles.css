@@ -1205,28 +1205,28 @@ footer {
   
   
   .H1movingP p{
-    margin-bottom: 200px;
-    font-size: 8vw;
+    margin-bottom: 300px;
+    font-size: 3vw;
   }
   .movingPage1{
     display: none;
   }
   .moving-img1 {
     position: relative;
-    right: 43vw;
+    right: 20vw;
    
   
   }
  
   .moving-img2 {
    position: relative;
-    right: 46vw;
+    right: 23vw;
   
   }
   
   .moving-img3 {
     position: relative;
-    right: 43vw;
+    right: 20vw;
 
     
   }
@@ -1326,7 +1326,7 @@ footer {
     align-self: center;
     position: relative;
     bottom: 35vw;
-    left: 23vw;
+    left: 38vw;
     width: 2vw;
   }
   
@@ -1356,7 +1356,7 @@ footer {
     font-family: 'Roboto Condensed', sans-seri;
     bottom: 40vw;
     font-size: 20px;
-    right: .5vw;
+    left: 6vw;
   }
   
   .merittext3,.merittext4 {
@@ -1373,7 +1373,7 @@ footer {
   .BedroomList{
     align-content: center;
     position: relative;
-    left: 15vw;
+    left: 34vw;
    
   }
   
