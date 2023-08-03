@@ -55,12 +55,27 @@
 
 
 <body>
+  <label class="hamburger" for="sidebar-checkbox">&#9776;</label>
 
+  <div class="sidebar">
+    <!-- Sidebar navigation -->
+    <input type="checkbox" id="sidebar-checkbox" style="display: none;">
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Moving.html">Moving</a></li>
+        <li><a href="reviews.html">Reviews</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </div>
   
   <!-- Rest of your HTML content -->
   <script src="script.js"></script>
 
-
+ 
   <div class="H1moving">
     <h1>MOVING</h1>
     <div class="H1movingAbout">
@@ -201,7 +216,11 @@
         <li>TRAVEL FEE: FOR MOVES OUTSIDE OF WAKE COUNTY WE DO CHARGE A TRAVEL FEE </li>
       </ul>
     </div>
-    <script src="images/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    <script type='text/javascript'>
+      (function(I, L, T, i, c, k, s) {if(I.iticks) return;I.iticks = {host:c, settings:s, clientId:k, cdn:L, queue:[]};var h = T.head || T.documentElement;var e = T.createElement(i);var l = I.location;e.async = true;e.src = (L||c)+'/client/inject-v2.min.js';h.insertBefore(e, h.firstChild);I.iticks.call = function(a, b) {I.iticks.queue.push([a, b]);};})(window, 'https://cdn-v1.intelliticks.com/prod/common', document, 'script', 'https://app.intelliticks.com', 'nWC6CpCDyF6ufyhZw_c', {});
+    </script>
 </body>
 <footer>
     

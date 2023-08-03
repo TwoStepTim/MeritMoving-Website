@@ -4,6 +4,7 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+/*Video/Header Start------------------------------------------ */
 
 .video-container {
   position: relative;
@@ -98,8 +99,10 @@ video {
   margin-bottom: 100px;
   margin-right: 30px;
 }
+/*Video/Header End------------------------------------------ */
 
-/* Add styles for the header and header links */
+/*NavBar Start------------------------------------------ */
+
 nav {
   background-color: #333;
   color: #fff;
@@ -137,11 +140,13 @@ nav ul li a:hover {
 nav ul li.active a {
   background-color: rgba(248, 199, 37, 0.774);
 }
+/*NavBar End------------------------------------------ */
 
+/*Footer Start------------------------------------------ */
 footer {
   
   background-color: #636363;
-  padding: 100px;
+  padding: 10px;
 }
 .footer-columns {
   display: flex;
@@ -218,37 +223,37 @@ footer {
 .grid-container > div {
   color: white;
   text-align: center;
-  padding: 5px 0;
+  padding: 5px 100px;
   font-size: 10px;
   opacity: 100%;
 }
 .CEO img {
   width: 15vw;
-  height: auto;
-  position: relative;
-  bottom: 20vw;
-  right: 17vw;
+  position: absolute;
+  bottom: 10vw;
+  right: 50vw;
 }
 .InstagramIconColor img {
-  height: auto;
+
   width: 4vw;
   position: relative;
-  bottom: 30vw;
+  bottom: 10vw;
   right: 35vw;
   
 }
-
 .FacebookIconColor img {
-  height: auto;
+ 
   width: 4vw;
   position: relative;
-  bottom: 26vw;
+  bottom: 5.7vw;
   right: 40vw;
+ 
 }
+/*Footer End------------------------------------------ */
 
-/* Rest of your CSS remains the same */
 
-/* Sidebar styles */
+/* Sidebar Start------------------------------------------ */
+
 .sidebar {
   position: fixed;
   top: 0;
@@ -294,6 +299,7 @@ footer {
   display: none; /* Initially hidden on larger screens */
   color: white;
 }
+/*Sidebar End------------------------------------------ */
 
 
 
@@ -414,8 +420,10 @@ footer {
   align-items: center;
 
 }
+
 .meritteamList,.MeriteliteList,.MeritbasicList{
   font-size: 15px;
+  overflow-x: hidden;
   font-family: 'Roboto Condensed', sans-seri;
 }
 
@@ -557,7 +565,10 @@ footer {
   bottom: 40vw;
   font-size: 17px;
 }
-/* FQA */
+/*Moving End------------------------------------------ */
+
+/* FQA Start------------------------------------------ */
+
 
 .QuestionsAsked{
   text-align: center;
@@ -590,10 +601,12 @@ footer {
    display: none;
    padding: 20px;
  }
+ /*FQA End------------------------------------------ */
+
  
  
- 
- /* Reviews */
+ /* Reviews Start------------------------------------------ */
+
  .ReviewsHeader h1{
    font-size: 5vw;
    text-align: center;
@@ -606,11 +619,16 @@ footer {
  }
  
  .Rev{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    overflow-x: hidden;
    font-family: 'Open Sans', sans-serif;
  }
  
- 
- /* About us */
+ /*Reviews End------------------------------------------ */
+
+ /* About us Start------------------------------------------ */
+
  
  .About-us h1{
    font-family: 'Roboto Condensed', sans-serif;
@@ -693,8 +711,10 @@ footer {
      opacity: 1;
    }
  }
+/*About us End------------------------------------------ */
 
-  /* Gallery */
+  /* Gallery Start----------------------------------------- */
+
 
   .grid-container-pic {
     display: grid;
@@ -713,7 +733,9 @@ footer {
     opacity: 100%;
 
   }
+/*Gallery End------------------------------------------ */
 
+/*Small Screens(Phones) Start------------------------------------------ */
 
 @media (min-width: 360px) and (max-width: 420px) {
  
@@ -760,9 +782,11 @@ footer {
     text-align-last: center;
   }
   .Area-we-cover-text{
+    color: burlywood;
     position: relative;
-    width: 5vw;
-    left: 7vw;
+    right: 1vw;
+    text-align: center;
+
   }
   .footer-column.hr{
     border-left: 1px solid #636363;
@@ -771,33 +795,32 @@ footer {
 
   .footer-column h3 {
     font-size: 10vw;
-    bottom: 25vw;
+    bottom: 10vw;
     text-align: center;
   }
 
   .footer-column p {
     font-size: 8vw;
-    bottom: 25vw;
+    bottom: 15vw;
     width: 70vw;
   }
 
   .Callus h4 {
     font-size: 10vw;
-    bottom: 30vw;
+    bottom: 20vw;
   }
 
   .Callus p {
     font-size: 10vw;
-    bottom: 45vw;
+    bottom: 35vw;
   }
 
-  .Area-we-cover-text{
-    color: burlywood;
-  }
+ 
   .area-we-cover {
     position: relative;
     bottom: 5vw;
     left: 1vw;
+    
     
   }
 
@@ -809,7 +832,9 @@ footer {
     padding: 5vw;
     
   }
+ 
   .InstagramIconColor img {
+   position: relative;
     width: 15vw;
     bottom: 225vw;
     left: 15vw;
@@ -817,16 +842,17 @@ footer {
   .grid-container > div {
     width: 5vw;
     opacity: 100%;
-
+    padding: 5px ;
   }
 
   .FacebookIconColor img {
+   position: relative;
     width: 15vw;
     bottom: 210vw;
     right: 20vw;
   }
 
-  /* Additional styles specific to screen size between 360px and 420px */
+ 
 
   .H1moving {
     font-family: 'bebas neue';
@@ -844,26 +870,29 @@ footer {
   }
   
   
-
+  .H1movingP p{
+    margin-bottom: 200px;
+    font-size: 8vw;
+  }
   .movingPage1{
     display: none;
   }
   .moving-img1 {
     position: relative;
-    right: 40vw;
+    right: 43vw;
    
   
   }
-  
+ 
   .moving-img2 {
    position: relative;
-    right: 45vw;
+    right: 46vw;
   
   }
   
   .moving-img3 {
     position: relative;
-    right: 40vw;
+    right: 43vw;
 
     
   }
@@ -1042,11 +1071,6 @@ footer {
 
 
 
-
-
-
-
-
   .QuestionsAsked h1 {
     font-size: 40px;
   }
@@ -1063,7 +1087,7 @@ footer {
     margin-bottom: 50px;
   }
   .ReviewsHeader h1{
-    font-size: 15vw;
+    font-size: 10vw;
     text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
   }
@@ -1109,6 +1133,10 @@ footer {
     overflow-x: hidden;
   }
 }
+/*Small Screens(Phones) End------------------------------------------ */
+
+/*Meidum Screens(Tablets) Start------------------------------------------ */
+
 @media (min-width: 760px) and (max-width: 1020px) {
   .header-logo img {
     width: 25vw;
@@ -1147,18 +1175,19 @@ footer {
   }
   
   .InstagramIconColor img {
+    position: relative;
     width: 8vw;
     bottom: 25vw;
     right: 25vw;
   }
 
   .FacebookIconColor img {
+    position: relative;
     width: 8vw;
     bottom: 16.5vw;
     right: 35vw;
   }
 
-  /* Additional styles specific to screen size between 360px and 420px */
   .H1moving h1 {
     margin-left: 30px;
     font-size: 30px;
@@ -1226,6 +1255,9 @@ footer {
     overflow-x: hidden;
   }
 }
+/*Meidum Screens(Tablets) End------------------------------------------ */
+
+/*XL Screens(Tv and big Monitors) Start------------------------------------------ */
 
 @media (min-width: 1400px){
   .H1moving {
@@ -1489,5 +1521,21 @@ footer {
     bottom: 42vw;
     font-size: 17px;
   }
-  
+  .InstagramIconColor img {
+
+    width: 4vw;
+    position: relative;
+    bottom: 30vw;
+    right: 35vw;
+    display: inline;
+  }
+  .FacebookIconColor img {
+   
+    width: 4vw;
+    position: relative;
+    bottom: 26vw;
+    right: 40vw;
+    display: inline;
+  }
 }
+/*XL Screens(Tv and big Monitors) End------------------------------------------ */
