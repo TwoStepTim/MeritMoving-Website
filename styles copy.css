@@ -557,7 +557,6 @@ footer {
   bottom: 40vw;
   font-size: 17px;
 }
-
 /* FQA */
 
 .QuestionsAsked{
@@ -844,14 +843,6 @@ footer {
     
   }
   
-  
-  .H1movingP p {
-    position: relative;
-    font-size: 20px;
-    text-align: center;
-    font-family: 'Roboto Condensed', sans-seri;
-    margin-bottom: 50vw;
-  }
   
 
   .movingPage1{
@@ -1234,4 +1225,269 @@ footer {
   .body{
     overflow-x: hidden;
   }
+}
+
+@media (min-width: 1400px){
+  .H1moving {
+    font-family: 'bebas neue';
+    margin-top: 50px;
+  }
+  
+  
+  .H1movingAbout {
+    position: relative;
+    font-size: 50px;
+    font-size: 25px;
+    width: 40vw ;
+    left: 50vw;
+    font-family: 'Roboto Condensed', sans-seri;
+    word-spacing: 6px;
+  }
+  
+  
+  .H1movingP p {
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-seri;
+    margin-bottom: 10vw;
+    bottom: 7vw;
+  }
+  
+  
+  .H1moving h1 {
+    position: relative;
+    font-size: 60px;
+    text-align: center;
+    letter-spacing: 10px;
+  }
+  
+  .H1moving h2 {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 200px;
+    letter-spacing: 12px;
+    bottom: 2vw;
+    margin-bottom: 6vw;
+  
+  }
+  .movingPage1{
+    position: relative;
+    bottom: 43vw;
+    left: 25vw;
+  }
+  .moving-img1 {
+    position: relative;
+    right: 8vw;
+    width: 1vw;
+  
+  }
+  
+  .moving-img2 {
+   position: relative;
+    right: 9vw;
+    width: 1vw;
+  }
+  
+  .moving-img3 {
+    position: relative;
+    right: 8vw;
+    width: 1vw;
+  
+  }
+  
+  .movingtext h2{
+  
+    font-size:17px;
+    text-align: center;
+    margin-left: 2rem;
+    width: 20vw;
+    margin-top: 10px;
+    font-family: 'Roboto Condensed', sans-seri;
+  }
+  
+  
+  .movingtext {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    bottom: 32vw;
+    font-family: 'bebas neue';
+    
+  }
+  .Meritbasic,.Meritelite,.meritteam{
+    display: flex; /* Add this line to create a flex container */
+    flex-direction: column; /* Add this line to stack items vertically */
+    align-items: center;
+    text-align: center; /* Add this line to center the text */
+  }
+  .Meritbasic{
+    margin-left: 10vw;
+  }
+  .meritteam{
+    margin-right: 10vw;
+  }
+  .movingtext h1{
+    font-size: 30px;
+    text-align: center;
+    
+  }
+  
+  .movingtext p {
+    margin-left: 5vw;
+    margin-top: 2vw;
+    margin-right: 3vw;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+  
+  }
+  .meritteamList,.MeriteliteList,.MeritbasicList{
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-seri;
+  }
+  
+  .needatruck{
+    position: relative;
+    text-align: center;
+    font-family: 'bebas neue';
+    margin-bottom: 5vw;
+    bottom: 30vw;
+  }
+  
+  .needatruck h1 {
+    font-size: 20px;
+    letter-spacing: 2px;
+  }
+  
+  .needatruck p{
+    font-family: 'Roboto Condensed', sans-seri;
+    font-size: 17px;
+    margin-left: 16vw;
+    margin-right: 16vw;
+  }
+  
+  .manpower{
+    position: relative;
+    text-align: center;
+    font-family: 'bebas neue';
+    
+    bottom: 32vw;
+    margin-top: 5vw;
+    
+  }
+  
+  .manpower h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
+  .manpower p{
+    font-family: 'Roboto Condensed', sans-seri;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 5vw;
+  }
+  
+  .moving-img4{
+    align-self: center;
+    position: relative;
+    bottom: 35vw;
+    left: 45vw;
+    width: 2vw;
+  }
+  
+  
+  .merittext2 h3{
+    position: relative;
+    text-align: center;
+    font-family: 'bebas neue';
+    margin-bottom: 5vw;
+    bottom: 36vw;
+    font-size: 20px;
+    letter-spacing: 5px;
+   
+  }
+  .PriceList{
+    position: relative;
+    right: 5vw;
+  }
+  
+  .merittext3 p{
+    margin-top: 20px;
+  }
+  
+  .merittext2 ul{
+    position: relative;
+    list-style-type: disc; /* Set the bullet style to 'disc', other options include 'circle', 'square', etc. */
+    padding-left: 47vw; /* Increase or decrease the left padding to move the list to the right */
+    font-family: 'Roboto Condensed', sans-seri;
+    bottom: 40vw;
+    font-size: 20px;
+    left: 3vw;
+  }
+  
+  .merittext3,.merittext4 {
+    position: relative;
+    text-align: center;
+    font-family: 'bebas neue';
+    margin-bottom: 5vw;
+    bottom: 39vw;
+    left: .5vw;
+  
+  }
+  
+  
+  .BedroomList{
+    align-content: center;
+    position: relative;
+    left: 43vw;
+    font-family: 'Roboto Condensed', sans-seri;
+    position: relative;
+    bottom: 40vw;
+    font-size: 20px;
+  }
+  
+  .merittext3 h1{
+    font-family: 'bebas neue';
+  
+  }
+  
+  .merittext3,.merittext4 h1{
+    margin-top: 50px;
+    
+    margin-bottom: 20px;
+    font-size: 40px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    
+  }
+  
+  .merittext3 h2{
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 25px;
+    margin-bottom: 2vw;
+  
+  }
+  .merittext3,.merittext4 p{
+    font-family: 'Roboto Condensed', sans-seri;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    font-size: 20px;
+  }
+  .MovingChargesList{
+    align-content: center;
+    position: relative;
+    left: 30vw;
+    font-family: 'Roboto Condensed', sans-seri;
+    position: relative;
+    bottom: 42vw;
+    font-size: 17px;
+  }
+  
 }
