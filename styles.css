@@ -1173,7 +1173,14 @@ footer {
     font-size: 10vw;
     top: 20vw;
   }
-  
+  .grid-container > div {
+    width: 5vw;
+    opacity: 100%;
+    padding: 5px ;
+  }
+  .footer-column h3{
+    font-size: 40px;
+  }
   .InstagramIconColor img {
     position: relative;
     width: 8vw;
