@@ -1129,7 +1129,7 @@ footer {
     top: 1vw;
     left: 10vw;
   }
-  .body{
+  html,body{
     overflow-x: hidden;
   }
 }
