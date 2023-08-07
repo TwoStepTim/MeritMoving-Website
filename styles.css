@@ -151,26 +151,37 @@ footer {
 .footer-columns {
   display: flex;
   justify-content: space-between;
+  
+ 
 }
 .footer-column {
   flex: 1;
-  padding: 10px;
+  font-weight: 700;
+  padding: 50px;
 }
 .footer-column h3 {
   font-family: 'Roboto Condensed', sans-serif;
   color: #ffffff;
-  font-size: 50px;
+  font-size: 25px;
   position: relative;
-  bottom: 4vw;
+  bottom: 2vw;
+ 
   
 }
 .footer-column p {
-
+  
   color: #ffffff;
-  font-size: 30px;
-  margin-bottom: px;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  width: 25vw;
   position: relative;
-  bottom: 5vw;
+  bottom: 2vw;
+  
+}
+.ContactUs{
+  
+  margin-left: 18vw;
 }
 .footer-column ul {
   list-style: none;
@@ -181,22 +192,30 @@ footer {
   color: #ffffff;
   margin-bottom: 5px;
 }
-.footer-column.hr {
-  border-left: 1px solid #ffffff;
-  
+
+.Line{
+
+  border-left: 1px solid #202330;
+  height: 250px;
+  margin-top: 60px;
+  position: relative;
+ 
 }
 
 .Callus h4{
-  font-size: 2vw ;
+  font-size: 20px ;
   font-family: 'Roboto Condensed', sans-serif;
   color: white;
   position: relative;
-  bottom: 5vw;
+  bottom: 3vw;
+ 
 }
 
 .Callus p{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 3vw ;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size:30px ;
+  position: relative;
+  bottom: 5vw;
   
 }
 .area-we-cover li {
@@ -207,47 +226,47 @@ footer {
 }
 .area-we-cover{
   position: relative;
-  bottom: 5vw;
-
+  bottom: 2vw;
+ 
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto ;
-  grid-gap: 5px;
+  align-items: baseline;
+  grid-template-columns: 130px auto;
+  width: 25vw;
+  height: 20vh;
+  border-radius: 15px;
   background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
   
+
 }
 
 .grid-container > div {
   color: white;
   text-align: center;
-  padding: 5px 100px;
-  font-size: 10px;
-  opacity: 100%;
+  font-family: 'REM', sans-serif;
+  font-size: 6px;
+  border-radius: 10px
 }
-.CEO img {
-  width: 15vw;
-  position: absolute;
-  bottom: 10vw;
-  right: 50vw;
+.grid-container > div h1 {
+  width: 150px;
 }
-.InstagramIconColor img {
 
-  width: 4vw;
-  position: relative;
-  bottom: 10vw;
-  right: 35vw;
-  
+
+
+.InstagramIconColor img {
+  width: 3vw;
+  position: absolute;
+  right: 65vw;
+ 
 }
 .FacebookIconColor img {
- 
-  width: 4vw;
-  position: relative;
-  bottom: 5.7vw;
-  right: 40vw;
- 
+
+  width: 3vw;
+  position: absolute;
+  right: 70vw;
+  
 }
 /*Footer End------------------------------------------ */
 
@@ -304,11 +323,11 @@ footer {
 
 
 
-/* Moving-------------------------------------------------- */
+/* Moving Start-------------------------------------------------- */
 
 .H1moving {
   font-family: 'bebas neue';
-  margin-top: 50px;
+  
 }
 
 
@@ -326,6 +345,7 @@ footer {
 .H1movingP p {
   position: relative;
   font-size: 1.6vw;
+  bottom:3vw;
   text-align: center;
   font-family: 'Roboto Condensed', sans-seri;
   margin-bottom: 5vw;
@@ -379,7 +399,7 @@ footer {
   text-align: center;
   margin-left: 2rem;
   width: 20vw;
-  margin-top: 10px;
+  
   font-family: 'Roboto Condensed', sans-seri;
 }
 
@@ -397,7 +417,7 @@ footer {
   display: flex; /* Add this line to create a flex container */
   flex-direction: column; /* Add this line to stack items vertically */
   align-items: center;
-  text-align: center; /* Add this line to center the text */
+  /* Add this line to center the text */
 }
 .Meritbasic{
   margin-left: 10vw;
@@ -411,15 +431,7 @@ footer {
   
 }
 
-.movingtext p {
-  margin-left: 5vw;
-  margin-top: 2vw;
-  margin-right: 3vw;
-  font-size: 20px;
-  text-align: center;
-  align-items: center;
 
-}
 
 .meritteamList,.MeriteliteList,.MeritbasicList{
   font-size: 15px;
@@ -453,7 +465,7 @@ footer {
   font-family: 'bebas neue';
   
   bottom: 32vw;
-  margin-top: 7vw;
+  
   
 }
 
@@ -466,7 +478,8 @@ footer {
   font-family: 'Roboto Condensed', sans-seri;
   font-size: 20px;
   text-align: center;
-  margin-bottom: 5vw;
+  position: relative;
+  bottom: 2vw;
 }
 
 .moving-img4{
@@ -489,12 +502,10 @@ footer {
 }
 .PriceList{
   position: relative;
-  right: 5vw;
+  right: 4vw;
 }
 
-.merittext3 p{
-  margin-top: 20px;
-}
+
 
 .merittext2 ul{
   position: relative;
@@ -510,17 +521,20 @@ footer {
   position: relative;
   text-align: center;
   font-family: 'bebas neue';
-  margin-bottom: 5vw;
   bottom: 39vw;
   left: .5vw;
 
 }
 
+.merittext3 h2{
+  position: relative;
+  bottom: 2vw;
+}
 
 .BedroomList{
   align-content: center;
   position: relative;
-  left: 40vw;
+  left: 39.5vw;
   font-family: 'Roboto Condensed', sans-seri;
   position: relative;
   bottom: 40vw;
@@ -529,13 +543,11 @@ footer {
 
 .merittext3 h1{
   font-family: 'bebas neue';
-
+  
 }
 
 .merittext3,.merittext4 h1{
-  margin-top: 50px;
-  
-  margin-bottom: 20px;
+ 
   font-size: 40px;
   letter-spacing: 5px;
   word-spacing: 10px;
@@ -557,11 +569,10 @@ footer {
   font-size: 20px;
 }
 .MovingChargesList{
-  align-content: center;
+
   position: relative;
   left: 23vw;
   font-family: 'Roboto Condensed', sans-seri;
-  position: relative;
   bottom: 40vw;
   font-size: 17px;
 }
@@ -1718,34 +1729,35 @@ footer {
     bottom: 42vw;
     font-size: 17px;
   }
-  .CEO{
-    width: 4vw;
-    position: absolute;
-    top: 30vw;
-    right: 1vw;
-
-    
-  }
+ 
   .InstagramIconColor img {
-
-    width: 4vw;
-    position: relative;
-    bottom: 10vw;
-    right: 35vw;
-    
+    width: 2vw;
+    position: absolute;
+    right: 70vw;
+    bottom: 2vw;
+   
   }
   .FacebookIconColor img {
-   
-    width: 4vw;
-    position: relative;
-    bottom: 5.8vw;
-    right: 40vw;
-   
+    bottom: 2vw;
+    width: 2vw;
+    position: absolute;
+    right: 73vw;
+    
   }
-
+  .Line{
+    margin-top: 80px;
+  }
+  .Callus p{
+    
+    font-size:30px ;
+    position: relative;
+    bottom: 4vw;
+    
+  }
   .footer-column{
     margin-top: 50px;
   }
+  
   .high-quality-Moving{
     position: relative;
     bottom: 14.3vw;
