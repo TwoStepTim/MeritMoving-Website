@@ -8,7 +8,6 @@ body {
 
 .video-container {
   position: relative;
- 
 }
 
 video {
@@ -31,7 +30,6 @@ video {
   justify-content: center;
   opacity: 1;
   transition: opacity 0.5s ease;
- 
 }
 
 .video-overlay h1, .video-overlay h2 {
@@ -347,14 +345,15 @@ footer {
 .H1movingP p {
   position: relative;
   font-size: 1.6vw;
+  bottom:3vw;
   text-align: center;
   font-family: 'Roboto Condensed', sans-seri;
- 
+  margin-bottom: 5vw;
 }
 
 
 .H1moving h1 {
-
+  position: relative;
   font-size: 60px;
   text-align: center;
   letter-spacing: 10px;
@@ -364,12 +363,14 @@ footer {
   position: relative;
   font-size: 50px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 200px;
+  right: 1vw;
+ 
   letter-spacing: 12px;
 }
 .movingPage1{
-  position: absolute;
- top:65vw;
+  position: relative;
+  bottom: 53.5vw;
   left: 19vw;
 }
 .moving-img1 {
@@ -404,11 +405,11 @@ footer {
 
 
 .movingtext {
-  
+  position: relative;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-
+  bottom: 32vw;
   font-family: 'bebas neue';
   
 }
@@ -443,13 +444,12 @@ footer {
   text-align: center;
   font-family: 'bebas neue';
   margin-bottom: 5vw;
-  
+  bottom: 30vw;
 }
 
 .needatruck h1 {
   font-size: 20px;
   letter-spacing: 2px;
-  margin-top: 100px;
 }
 
 .needatruck p{
@@ -464,10 +464,12 @@ footer {
   text-align: center;
   font-family: 'bebas neue';
   
+  bottom: 32vw;
+  
+  
 }
 
 .manpower h1{
-  margin-top: 100px;
   font-size: 60px;
   letter-spacing: 2px;
   word-spacing: 2px;
@@ -483,7 +485,7 @@ footer {
 .moving-img4{
   align-self: center;
   position: relative;
-  bottom: 3vw;
+  bottom: 35vw;
   left: 42vw;
   width: 2vw;
 }
@@ -494,7 +496,7 @@ footer {
   text-align: center;
   font-family: 'bebas neue';
   margin-bottom: 5vw;
-  bottom: 3vw;
+  bottom: 36vw;
   font-size: 20px;
  
 }
@@ -510,7 +512,7 @@ footer {
   list-style-type: disc; /* Set the bullet style to 'disc', other options include 'circle', 'square', etc. */
   padding-left: 47vw; /* Increase or decrease the left padding to move the list to the right */
   font-family: 'Roboto Condensed', sans-seri;
-  bottom: 7vw;
+  bottom: 40vw;
   font-size: 20px;
   right: .5vw;
 }
@@ -519,6 +521,7 @@ footer {
   position: relative;
   text-align: center;
   font-family: 'bebas neue';
+  bottom: 39vw;
   left: .5vw;
 
 }
@@ -534,7 +537,7 @@ footer {
   left: 39.5vw;
   font-family: 'Roboto Condensed', sans-seri;
   position: relative;
-  bottom: 2vw;
+  bottom: 40vw;
   font-size: 20px;
 }
 
@@ -544,7 +547,7 @@ footer {
 }
 
 .merittext3,.merittext4 h1{
- margin-top: 100px;
+ 
   font-size: 40px;
   letter-spacing: 5px;
   word-spacing: 10px;
@@ -570,9 +573,8 @@ footer {
   position: relative;
   left: 23vw;
   font-family: 'Roboto Condensed', sans-seri;
-  bottom: vw;
+  bottom: 40vw;
   font-size: 17px;
-  margin-bottom: 100px;
 }
 /*Moving End------------------------------------------ */
 
@@ -746,7 +748,6 @@ footer {
  .CEO{
   display: none;
  }
-
   .PhoneNumber {
     font-size: 1.5vw;
     right: 20vw;
@@ -785,35 +786,27 @@ footer {
 
   .footer-column h3 {
     font-size: 10vw;
-    bottom: 5vw;
+    bottom: 10vw;
     text-align: center;
   }
 
   .footer-column p {
     font-size: 8vw;
-    
+    bottom: 15vw;
     width: 70vw;
-    text-align: center;
   }
-  .ContactUs{
-    margin-right:50px ;
-  }
+
   .Callus h4 {
     font-size: 10vw;
+    bottom: 20vw;
   }
 
   .Callus p {
     font-size: 10vw;
-   
+    bottom: 35vw;
   }
 
-  .footer-column.hr p{
-    text-align: center;
-    margin-left: 20px;
-  }
-  .Line{
-   display: none;
-  }
+ 
   .area-we-cover {
     position: relative;
     bottom: 5vw;
@@ -825,18 +818,16 @@ footer {
   .grid-container {
     display: grid;
     grid-template-columns: auto auto ;
-    
+    grid-gap: 1vw;
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 1vw;
-    width: 80vw;
-    height: 25vh;
+    padding: 5vw;
     
   }
  
   .InstagramIconColor img {
    position: relative;
     width: 15vw;
-    bottom: 175vw;
+    bottom: 225vw;
     left: 15vw;
   }
   .grid-container > div {
@@ -848,7 +839,7 @@ footer {
   .FacebookIconColor img {
    position: relative;
     width: 15vw;
-    bottom: 158vw;
+    bottom: 210vw;
     right: 20vw;
   }
 
@@ -871,7 +862,7 @@ footer {
   
   
   .H1movingP p{
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     font-size: 8vw;
   }
   .movingPage1{
@@ -910,7 +901,7 @@ footer {
     display: block;
     align-items: l;
     justify-content: space-between;
-   
+    bottom: 32vw;
     font-family: 'bebas neue';
     
   }
@@ -950,8 +941,8 @@ footer {
     position: relative;
     text-align: center;
     font-family: 'bebas neue';
-    margin-bottom: 100px;
-    
+    margin-bottom: 5vw;
+    bottom: 30vw;
   }
   
   .needatruck h1 {
@@ -961,7 +952,7 @@ footer {
   
   .needatruck p{
     font-family: 'Roboto Condensed', sans-seri;
-    font-size: 18px;
+    font-size: 17px;
     margin-left: 16vw;
     margin-right: 16vw;
   }
@@ -971,13 +962,12 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     
-    
-    
+    bottom: 32vw;
+    margin-top: 7vw;
     
   }
   
   .manpower h1{
-    margin-top: 10px;
     font-size: 60px;
     letter-spacing: 2px;
     word-spacing: 2px;
@@ -992,7 +982,7 @@ footer {
   .moving-img4{
     align-self: center;
     position: relative;
-    bottom: 5vw;
+    bottom: 35vw;
     left: 23vw;
     width: 2vw;
   }
@@ -1003,7 +993,7 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     margin-bottom: 5vw;
-    bottom: 6vw;
+    bottom: 36vw;
     font-size: 20px;
    
   }
@@ -1021,7 +1011,7 @@ footer {
     list-style-type: disc; /* Set the bullet style to 'disc', other options include 'circle', 'square', etc. */
     padding-left: 47vw; /* Increase or decrease the left padding to move the list to the right */
     font-family: 'Roboto Condensed', sans-seri;
-    bottom: 4vw;
+    bottom: 40vw;
     font-size: 20px;
     right: .5vw;
   }
@@ -1031,6 +1021,7 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     margin-bottom: 5vw;
+    bottom: 39vw;
     left: .5vw;
   
   }
@@ -1173,55 +1164,26 @@ footer {
     font-size: 10vw;
     top: 20vw;
   }
-  .Line{
-    height: 300px;
-    margin-top: 150px;
-  }
-  .grid-container {
-    width: 35vw;
-  }
-  .ContactUs{
-    position: relative;
-    left: 30px;
-    margin-left: 0vw;
-  }
-  .ContactUs p{
-    top: 5vw;
+  .grid-container > div {
+    width: 5vw;
+    opacity: 100%;
+    padding: 5px ;
   }
   .footer-column h3{
     font-size: 40px;
-    width: 270px;
-    
-  }
-  .footer-column.hr p{
-    bottom: 10px;
   }
   .InstagramIconColor img {
     position: relative;
-    width: 7vw;
-    bottom: 17.2vw;
-    right: 30vw;
+    width: 8vw;
+    bottom: 25vw;
+    right: 25vw;
   }
-  .footer-column P {
-    font-size: 20px;
-    width: 30vw;
-  }
-  .Callus h4{
-    font-size: 30px;
-    position: relative;
-    top: 3vw;
-    
-  }
-  .Callus p{
-    font-size: 30px;
-    top:vw;
-    ;
-  }
+
   .FacebookIconColor img {
     position: relative;
-    width: 7vw;
-    bottom: 10vw;
-    right: 45vw;
+    width: 8vw;
+    bottom: 16.5vw;
+    right: 35vw;
   }
 
   .H1moving {
@@ -1241,7 +1203,7 @@ footer {
   
   
   .H1movingP p{
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     font-size: 3vw;
   }
   .movingPage1{
@@ -1280,7 +1242,7 @@ footer {
     display: block;
     align-items: l;
     justify-content: space-between;
-    bottom: 2vw;
+    bottom: 32vw;
     font-family: 'bebas neue';
     
   }
@@ -1320,8 +1282,8 @@ footer {
     position: relative;
     text-align: center;
     font-family: 'bebas neue';
-    margin-bottom: 3vw;
-    
+    margin-bottom: 5vw;
+    bottom: 30vw;
   }
   
   .needatruck h1 {
@@ -1335,19 +1297,33 @@ footer {
     margin-left: 16vw;
     margin-right: 16vw;
   }
-
-
+  
+  .manpower{
+    position: relative;
+    text-align: center;
+    font-family: 'bebas neue';
+    
+    bottom: 32vw;
+    margin-top: 7vw;
+    
+  }
+  
+  .manpower h1{
+    font-size: 60px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
   .manpower p{
     font-family: 'Roboto Condensed', sans-seri;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
   }
   
   .moving-img4{
     align-self: center;
     position: relative;
-    bottom: 5vw;
+    bottom: 35vw;
     left: 38vw;
     width: 2vw;
   }
@@ -1357,8 +1333,8 @@ footer {
     position: relative;
     text-align: center;
     font-family: 'bebas neue';
-    margin-bottom: 10vw;
-    bottom: 3vw;
+    margin-bottom: 5vw;
+    bottom: 36vw;
     font-size: 20px;
    
   }
@@ -1376,7 +1352,7 @@ footer {
     list-style-type: disc; /* Set the bullet style to 'disc', other options include 'circle', 'square', etc. */
     padding-left: 47vw; /* Increase or decrease the left padding to move the list to the right */
     font-family: 'Roboto Condensed', sans-seri;
-    bottom: 10vw;
+    bottom: 40vw;
     font-size: 20px;
     left: 6vw;
   }
@@ -1386,7 +1362,7 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     margin-bottom: 5vw;
-    bottom: 3vw;
+    bottom: 39vw;
     left: .5vw;
   
   }
@@ -1500,6 +1476,7 @@ footer {
   
   .H1movingAbout {
     position: relative;
+    font-size: 50px;
     font-size: 25px;
     width: 40vw ;
     left: 50vw;
@@ -1511,7 +1488,10 @@ footer {
   .H1movingP p {
     position: relative;
     font-size: 20px;
-    margin-bottom: 6vw;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-seri;
+    margin-bottom: 10vw;
+    bottom: 7vw;
   }
   
   
@@ -1526,13 +1506,15 @@ footer {
     position: relative;
     font-size: 50px;
     text-align: center;
+    margin-top: 200px;
     letter-spacing: 12px;
-    margin-bottom: 1vw;
+    bottom: 2vw;
+    margin-bottom: 6vw;
   
   }
   .movingPage1{
-    position: absolute;
-    top: 60vw;
+    position: relative;
+    bottom: 45vw;
     left: 22vw;
   }
   .moving-img1 {
@@ -1568,9 +1550,10 @@ footer {
   
   .movingtext {
     position: relative;
-    
+    display: flex;
+    align-items: baseline;
     justify-content: space-between;
-    bottom: 3vw;
+    bottom: 32vw;
     font-family: 'bebas neue';
     
   }
@@ -1611,7 +1594,7 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     margin-bottom: 5vw;
-    bottom: 3vw;
+    bottom: 30vw;
   }
   
   .needatruck h1 {
@@ -1631,7 +1614,7 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     
-    bottom: 1vw;
+    bottom: 32vw;
     margin-top: 5vw;
     
   }
@@ -1651,8 +1634,8 @@ footer {
   .moving-img4{
     align-self: center;
     position: relative;
-    bottom: 7vw;
-    left: 44vw;
+    bottom: 35vw;
+    left: 45vw;
     width: 2vw;
   }
   
@@ -1661,8 +1644,8 @@ footer {
     position: relative;
     text-align: center;
     font-family: 'bebas neue';
-    margin-bottom: 1vw;
-    bottom: 8vw;
+    margin-bottom: 5vw;
+    bottom: 36vw;
     font-size: 20px;
     letter-spacing: 5px;
    
@@ -1670,7 +1653,6 @@ footer {
   .PriceList{
     position: relative;
     right: 5vw;
-    bottom:4vw
   }
   
   .merittext3 p{
@@ -1682,7 +1664,7 @@ footer {
     list-style-type: disc; /* Set the bullet style to 'disc', other options include 'circle', 'square', etc. */
     padding-left: 47vw; /* Increase or decrease the left padding to move the list to the right */
     font-family: 'Roboto Condensed', sans-seri;
-    bottom: 4vw;
+    bottom: 40vw;
     font-size: 20px;
     left: 3vw;
   }
@@ -1692,7 +1674,7 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     margin-bottom: 5vw;
-    bottom: 3vw;
+    bottom: 39vw;
     left: .5vw;
   
   }
@@ -1704,7 +1686,7 @@ footer {
     left: 43vw;
     font-family: 'Roboto Condensed', sans-seri;
     position: relative;
-    bottom: 4vw;
+    bottom: 40vw;
     font-size: 20px;
   }
   
@@ -1744,7 +1726,7 @@ footer {
     left: 30vw;
     font-family: 'Roboto Condensed', sans-seri;
     position: relative;
-    bottom: 2vw;
+    bottom: 42vw;
     font-size: 17px;
   }
  
