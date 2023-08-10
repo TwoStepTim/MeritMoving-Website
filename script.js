@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   function updateVideo() {
     var scrollPercentage = (window.scrollY / maxScroll) * 100;
-    overlay.style.opacity = 1 - scrollPercentage / 50;
+    overlay.style.opacity = 1 - scrollPercentage / 10;
   }
   
   window.addEventListener("scroll", updateVideo);
