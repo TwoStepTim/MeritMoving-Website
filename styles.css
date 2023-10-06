@@ -1184,9 +1184,11 @@ footer {
     position: relative;
     left: 30px;
     margin-left: 0vw;
+    margin-bottom: 0%;
   }
   .ContactUs p{
-    top: 5vw;
+    top: 6vw;
+    
   }
   .footer-column h3{
     font-size: 40px;
@@ -1199,8 +1201,8 @@ footer {
   .InstagramIconColor img {
     position: relative;
     width: 5vw;
-    bottom: 4vw;
-    right: 30vw;
+    top: 1.5vw;
+    right: 35vw;
   }
   .footer-column P {
     font-size: 20px;
@@ -1215,12 +1217,12 @@ footer {
   .Callus p{
     font-size: 30px;
     top:vw;
-    ;
+  
   }
   .FacebookIconColor img {
     position: relative;
-    width: 7vw;
-    bottom: 10vw;
+    width: 5vw;
+    top: 7vw;
     right: 45vw;
   }
 
