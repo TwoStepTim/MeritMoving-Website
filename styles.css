@@ -1137,7 +1137,7 @@ footer {
 
 /*Meidum Screens(Tablets) Start------------------------------------------ */
 
-@media (min-width: 760px) and (max-width: 1020px) {
+@media (min-width: 760px) and (max-width: 1220px) {
   .header-logo img {
     width: 25vw;
     left: 1vw;
@@ -1198,8 +1198,8 @@ footer {
   }
   .InstagramIconColor img {
     position: relative;
-    width: 7vw;
-    bottom: 17.2vw;
+    width: 5vw;
+    bottom: 4vw;
     right: 30vw;
   }
   .footer-column P {
