@@ -182,7 +182,7 @@ footer {
   
 }
 .ContactUs{
-  
+
   margin-left: 18vw;
 }
 .footer-column ul {
@@ -1193,8 +1193,8 @@ footer {
   .footer-column h3{
     font-size: 40px;
     width: 270px;
-    
   }
+  
   .footer-column.hr p{
     bottom: 10px;
   }
@@ -1244,30 +1244,12 @@ footer {
   
   .H1movingP p{
     margin-bottom: 100px;
-    font-size: 3vw;
+    font-size: 8vw;
   }
   .movingPage1{
     display: none;
   }
-  .moving-img1 {
-    position: relative;
-    right: 20vw;
-   
   
-  }
- 
-  .moving-img2 {
-   position: relative;
-    right: 23vw;
-  
-  }
-  
-  .moving-img3 {
-    position: relative;
-    right: 20vw;
-
-    
-  }
   
   .movingtext h2{
     margin-left: 0rem;
@@ -1282,7 +1264,7 @@ footer {
     display: block;
     align-items: l;
     justify-content: space-between;
-    bottom: 2vw;
+   
     font-family: 'bebas neue';
     
   }
@@ -1322,7 +1304,7 @@ footer {
     position: relative;
     text-align: center;
     font-family: 'bebas neue';
-    margin-bottom: 3vw;
+    margin-bottom: 100px;
     
   }
   
@@ -1333,24 +1315,35 @@ footer {
   
   .needatruck p{
     font-family: 'Roboto Condensed', sans-seri;
-    font-size: 17px;
+    font-size: 18px;
     margin-left: 16vw;
     margin-right: 16vw;
   }
-
-
+  
+  .manpower{
+    position: relative;
+    text-align: center;
+    font-family: 'bebas neue';
+  }
+  
+  .manpower h1{
+    margin-top: 10px;
+    font-size: 60px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+  }
   .manpower p{
     font-family: 'Roboto Condensed', sans-seri;
     font-size: 20px;
     text-align: center;
-    margin-bottom: 1vw;
+    margin-bottom: 5vw;
   }
   
   .moving-img4{
     align-self: center;
-    position: relative;
+  
     bottom: 5vw;
-    left: 38vw;
+   
     width: 2vw;
   }
   
@@ -1359,14 +1352,13 @@ footer {
     position: relative;
     text-align: center;
     font-family: 'bebas neue';
-    margin-bottom: 10vw;
-    bottom: 3vw;
+    bottom: 6vw;
     font-size: 20px;
    
   }
   .PriceList{
     position: relative;
-    right: 15vw;
+  
   }
   
   .merittext3 p{
@@ -1378,9 +1370,9 @@ footer {
     list-style-type: disc; /* Set the bullet style to 'disc', other options include 'circle', 'square', etc. */
     padding-left: 47vw; /* Increase or decrease the left padding to move the list to the right */
     font-family: 'Roboto Condensed', sans-seri;
-    bottom: 10vw;
+    bottom: 4vw;
     font-size: 20px;
-    left: 6vw;
+    right: .5vw;
   }
   
   .merittext3,.merittext4 {
@@ -1388,7 +1380,6 @@ footer {
     text-align: center;
     font-family: 'bebas neue';
     margin-bottom: 5vw;
-    bottom: 3vw;
     left: .5vw;
   
   }
@@ -1396,8 +1387,6 @@ footer {
   
   .BedroomList{
     align-content: center;
-    position: relative;
-    left: 34vw;
    
   }
   
@@ -1422,8 +1411,7 @@ footer {
   }
   .MovingChargesList{
     align-content: center;
-    position: relative;
-    left: 1vw;
+  
    
   }
 
@@ -1468,6 +1456,8 @@ footer {
    
     margin-left: 10vw;
   }
+
+
   .About-us p{
     font-family: 'Open Sans', sans-serif;
     width: 70vw;
@@ -1485,7 +1475,7 @@ footer {
     top: 1vw;
     left: 10vw;
   }
-  .body{
+  .html.body{
     overflow-x: hidden;
   }
 }
@@ -1535,24 +1525,24 @@ footer {
   .movingPage1{
     position: absolute;
     top: 60vw;
-    left: 22vw;
+    left: 15vw;
   }
   .moving-img1 {
     position: relative;
-    right: 8vw;
+    right: 11vw;
     width: 1vw;
   
   }
   
   .moving-img2 {
    position: relative;
-    right: 9vw;
+    right: 12vw;
     width: 1vw;
   }
   
   .moving-img3 {
     position: relative;
-    right: 8vw;
+    right: 12vw;
     width: 1vw;
   
   }
@@ -1753,7 +1743,7 @@ footer {
   .InstagramIconColor img {
     width: 2vw;
     position: absolute;
-    right: 70vw;
+    right: 65vw;
     bottom: 2vw;
    
   }
@@ -1761,7 +1751,7 @@ footer {
     bottom: 2vw;
     width: 2vw;
     position: absolute;
-    right: 73vw;
+    right: 70vw;
     
   }
   .Line{
