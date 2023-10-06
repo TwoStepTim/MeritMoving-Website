@@ -36,3 +36,26 @@ $(document).ready(function() {
     }
   });
 });
+
+  // Function to check if the device is a mobile device
+  function isMobileDevice() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+  }
+
+  // Function to play the video on mobile devices
+  function playVideoOnMobile() {
+    const video = document.getElementById("myVideo");
+
+    // Check if the device is mobile and the video exists
+    if (isMobileDevice() && video) {
+      // Play the video
+      video.play().catch(function(error) {
+        // Handle any errors if video cannot be played
+        console.error("Video playback error:", error);
+      });
+    }
+  }
+
+  // Trigger video playback on page load
+  window.addEventListener("load", playVideoOnMobile);
+

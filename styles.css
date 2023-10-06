@@ -1187,7 +1187,7 @@ footer {
     margin-bottom: 0%;
   }
   .ContactUs p{
-    top: 6vw;
+    top: 0vw;
     
   }
   .footer-column h3{
@@ -1238,7 +1238,6 @@ footer {
     left: 10vw;
     font-size: 20px;
     text-align: center;
-    
   }
   
   
@@ -1255,7 +1254,6 @@ footer {
     margin-left: 0rem;
     width: 30vw;
     margin-top: 0px;
-    
   }
   
   
@@ -1341,9 +1339,7 @@ footer {
   
   .moving-img4{
     align-self: center;
-  
     bottom: 5vw;
-   
     width: 2vw;
   }
   
@@ -1381,27 +1377,22 @@ footer {
     font-family: 'bebas neue';
     margin-bottom: 5vw;
     left: .5vw;
-  
   }
   
   
   .BedroomList{
     align-content: center;
-   
   }
   
   .merittext3 h1{
     font-family: 'bebas neue';
-  
   }
   
  
   
   .merittext3 h2{
-  
     margin-left: 0vw;
     margin-right: 0vw;
-   ;
   }
   .merittext3,.merittext4 p{
    
