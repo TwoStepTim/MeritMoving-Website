@@ -324,6 +324,11 @@ footer {
 
 
 
+.page-content{
+  position: relative;
+  left: 27vw;
+  margin-top: 4vw;
+}
 
 /* Moving Start-------------------------------------------------- */
 
@@ -408,13 +413,8 @@ footer {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-
   font-family: 'bebas neue';
   
-}
-#video-trigger {
-  height: 100px; /* Adjust the height as needed */
-  background-color: transparent; /* Optional styling */
 }
 
 .Meritbasic,.Meritelite,.meritteam{
@@ -487,9 +487,9 @@ footer {
 
 .moving-img4{
   align-self: center;
-  position: relative;
+  
   bottom: 3vw;
-  left: 42vw;
+  
   width: 2vw;
 }
 
@@ -498,7 +498,7 @@ footer {
   position: relative;
   text-align: center;
   font-family: 'bebas neue';
-  margin-bottom: 5vw;
+  margin-bottom: 2vw;
   bottom: 3vw;
   font-size: 20px;
  
@@ -751,7 +751,15 @@ footer {
  .CEO{
   display: none;
  }
+ .page-content{
+  position:relative;
+  left: 10px;
+  
 
+}
+.form{
+  width: 400px;
+}
   .PhoneNumber {
     font-size: 1.5vw;
     right: 20vw;
