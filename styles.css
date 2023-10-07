@@ -412,6 +412,11 @@ footer {
   font-family: 'bebas neue';
   
 }
+#video-trigger {
+  height: 100px; /* Adjust the height as needed */
+  background-color: transparent; /* Optional styling */
+}
+
 .Meritbasic,.Meritelite,.meritteam{
   display: flex; /* Add this line to create a flex container */
   flex-direction: column; /* Add this line to stack items vertically */

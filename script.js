@@ -37,25 +37,38 @@ $(document).ready(function() {
   });
 });
 
-  // Function to check if the device is a mobile device
-  function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-  }
+  // Get references to the video and trigger elements
+const video = document.getElementById('myVideo'); // Change 'myVideo' to the actual ID of your video element
+const trigger = document.getElementById('video-trigger');
 
-  // Function to play the video on mobile devices
-  function playVideoOnMobile() {
-    const video = document.getElementById("myVideo");
+// Function to start the video
+function startVideo() {
+  video.play();
+}
 
-    // Check if the device is mobile and the video exists
-    if (isMobileDevice() && video) {
-      // Play the video
-      video.play().catch(function(error) {
-        // Handle any errors if video cannot be played
-        console.error("Video playback error:", error);
-      });
+// Intersection Observer configuration
+const options = {
+  root: null, // Use the viewport as the root
+  rootMargin: '0px',
+  threshold: 0.5, // When 50% of the trigger element is in the viewport
+};
+
+// Callback function when the trigger element enters the viewport
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      // Start the video when the trigger is in view
+      startVideo();
+
+      // Stop observing to prevent multiple triggers
+      observer.unobserve(trigger);
     }
-  }
+  });
+}
 
-  // Trigger video playback on page load
-  window.addEventListener("load", playVideoOnMobile);
+// Create an Intersection Observer
+const observer = new IntersectionObserver(handleIntersection, options);
+
+// Start observing the trigger element
+observer.observe(trigger);
 
