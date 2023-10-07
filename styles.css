@@ -369,7 +369,7 @@ footer {
   position: relative;
   font-size: 50px;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 20vh;
   letter-spacing: 12px;
 }
 .movingPage1{
@@ -388,12 +388,14 @@ footer {
  position: relative;
   right: 13vw;
   width: 1vw;
+  
 }
 
 .moving-img3 {
   position: relative;
   right: 13vw;
   width: 1vw;
+
 
 }
 
@@ -403,7 +405,8 @@ footer {
   text-align: center;
   margin-left: 2rem;
   width: 20vw;
-  
+  align-items: baseline;
+  align-self:center ;
   font-family: 'Roboto Condensed', sans-seri;
 }
 
@@ -421,6 +424,7 @@ footer {
   display: flex; /* Add this line to create a flex container */
   flex-direction: column; /* Add this line to stack items vertically */
   align-items: center;
+  align-items: baseline;
   /* Add this line to center the text */
 }
 .Meritbasic{
@@ -432,6 +436,8 @@ footer {
 .movingtext h1{
   font-size: 30px;
   text-align: center;
+  align-self: center;
+  margin-left: 25px;
   
 }
 
@@ -441,6 +447,10 @@ footer {
   font-size: 15px;
   overflow-x: hidden;
   font-family: 'Roboto Condensed', sans-seri;
+}
+.meritteamList,.MeritbasicList{
+  position: relative;
+  top: 15px;
 }
 
 .needatruck{
@@ -481,15 +491,14 @@ footer {
   font-family: 'Roboto Condensed', sans-seri;
   font-size: 20px;
   text-align: center;
+  align-items: baseline;
   position: relative;
   bottom: 2vw;
 }
 
 .moving-img4{
   align-self: center;
-  
   bottom: 3vw;
-  
   width: 2vw;
 }
 
