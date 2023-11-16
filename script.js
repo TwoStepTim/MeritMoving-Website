@@ -1,3 +1,9 @@
+$(document).ready(function() {
+  // Toggle the sidebar when the hamburger is clicked
+  $(".hamburger").click(function() {
+    $(".sidebar").toggleClass("open");
+  });
+});
 document.addEventListener("DOMContentLoaded", function () {
   var video = document.getElementById("myVideo");
   var overlay = document.querySelector(".video-overlay");
