@@ -1,0 +1,134 @@
+
+:root{
+--color: #333; 
+}
+
+
+a,
+a:focus,
+a:hover {
+  color: #fff; /* Set link color */
+} 
+.btn-lg {
+  padding: .75rem 1.25rem; /* Add padding for large buttons */
+  font-weight: 700; /* Set font weight for large buttons */
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333; /* Set button text color */
+  text-shadow: none; /* Prevent text shadow */
+  background-color: #fff; /* Set button background color */
+  border: .05rem solid #fff; /* Set button border */
+}
+
+body {
+  overflow-x: hidden;
+  height: 100%; /* Set full height */
+  background-color: rgba(0, 0, 0, .5); /* Set background color */
+  
+}
+
+@media (max-width: 991px) {
+  .navbar-scroll {
+    background-color: #fff;
+  }
+     
+  .navbar-scroll .navbar-brand,
+  .navbar-scroll .nav-link,
+  .navbar-scroll .fa-bars {
+    color: #4f4f4f !important;
+  }         
+}
+
+.navbar-brand {
+  letter-spacing: 3px;
+  font-size: 2rem;
+  font-weight: 500;
+}
+.navbar-scroll .navbar-brand,
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars {
+  color: #fff;
+}
+
+.navbar-scroll {
+  box-shadow: none;
+}
+
+.navbar-scrolled {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars {
+  color: #4f4f4f;
+}
+
+.navbar-scrolled {
+  background-color: #fff;
+}
+
+
+.container {
+  text-align: center;
+  color: var(--colors);
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+/*  this is where the magic happens:  */
+  background-attachment: fixed;
+}
+
+/* Add overlay effect directly to the container */
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .5); /* Set the overlay color and transparency */
+}
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+
+/* Video */
+.fullscreen-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: 100vw;
+  overflow: hidden;
+  height: 100vh; /* Set height to window height */
+  object-fit: cover; /* Ensure the video covers the entire container */
+
+  z-index: -1; /* Ensure the video stays behind other content */
+}
+
+/* Content Overlay */
+.content-overlay {
+  position: relative;
+  z-index: 1; /* Ensure the content stays above the video */
+  text-align: center;
+  color: #fff; /* Adjust text color as needed */
+  max-width: 42em; /* Set maximum width */
+
+}
+
+/* Adjust other styles as necessary */
