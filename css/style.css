@@ -1,0 +1,236 @@
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.navbar-custom {
+    background-color: #000; /* Black background */
+    font-family: "Bebas Neue", sans-serif;
+
+}
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-toggler-icon {
+    color: #fff; /* White text */
+    font-size: 25px;
+}
+
+.navbar-custom .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1); /* Optional: white border around toggler */
+}
+.navbar-custom .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+.btn-primary {
+    height: 7rem; /* Full height */
+    width: 10%; /* Fixed width */
+    background-color: #fff !important;
+    color: #000 !important;
+}
+
+
+/* Full-height container */
+.video-background {
+    position: relative;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background: rgba(0, 0, 0, 0.5); /* Grey overlay with 50% opacity */
+    z-index: 1; /* Place overlay above the video */
+}
+
+.tittle{
+    font-size: 4rem;
+}
+.button-container {
+    display: flex;
+}
+.button-container-desk{
+    margin-top: 100px;
+}
+.button1 {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center;
+    align-items: center;
+    width: 230px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    background-color: #000; /* Button color */
+    color: #fff; /* Text color */
+    border: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    font-size: 30px; /* Font size for the top row */
+    text-align: center;
+    text-decoration: none; /* Remove underline for <a> tag */
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.button1:hover {
+    transform: translateY(-5px); /* Small jump effect */
+    color: #fff;
+}
+
+.button-subtext1 {
+    font-size: 20px; /* Smaller text for the bottom row */
+    color: #fff; /* Text color */
+    margin-top: -50px;
+    font-weight: normal;
+    font-family: "Inter", sans-serif;
+
+}
+/* Button 2 Styles */
+.button2 {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center;
+    align-items: center;
+    width: 230px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    background-color: #ffffff; /* Button color */
+    color: #000000; /* Text color */
+    border: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline for <a> tag */
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px; /* Font size for the top row */
+}
+
+.button2:hover {
+    transform: translateY(-5px); /* Small jump effect */
+    color: #000;
+}
+
+.button-subtext {
+    font-weight: normal;
+    font-size: 14px; /* Smaller text for the bottom row */
+    color: #000000; /* Text color */
+    font-family: "Inter", sans-serif;
+
+}
+
+/* Button 3 Styles */
+
+.button3 {
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center;
+    align-items: center;
+    width: 230px; /* Adjust width as needed */
+    height: 120px; /* Adjust height as needed */
+    background-color: #FFAC0B; /* Button color */
+    color: #000000; /* Text color */
+    border: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline for <a> tag */
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    font-size: 18px; /* Font size for the top row */
+}
+
+.button-subtext {
+    font-weight: normal;
+    font-size: 14px; /* Smaller text for the bottom row */
+    color: #000000; /* Text color */
+    margin-top: -20px;
+}
+
+.button1, .button3,.button2{
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+    text-decoration: none !important;
+    font-family: "Bebas Neue", sans-serif;
+
+
+
+}
+/* Content Styles */
+.content {
+    position: relative;
+    z-index: 3; /* Ensure content is above the overlay */
+    color: #fff; /* White text */
+    text-align: left;
+    padding: 20px;
+    top: 10rem;
+}
+
+/* Hide button container on desktop */
+@media (min-width: 992px) {
+    .button-container-bottom {
+        display: none;
+    }
+}
+
+/* Show button container on mobile */
+@media (max-width: 991px) {
+    .button-container-bottom {
+        display: flex;
+        flex-direction: row; /* Side by side on mobile */
+        justify-content: space-between; /* Space buttons side by side */
+        width: 100%; /* Full width of the viewport */
+        margin-top: 20px; /* Adjust margin if needed */
+    }
+
+    .button-container-desk {
+        display: none !important;
+    }
+}
+
+/* Ensure video height is adjusted on mobile */
+@media (max-width: 767px) {
+    .video-background {
+        height: 40vh; /* 40% of the viewport height */
+    }
+
+    .video-background video {
+        height: 100%;
+    }
+
+    .video-overlay {
+        height: 99.5%;
+    }
+
+    .content {
+        top: 0; /* Move content up to fit into the 40% height */
+        padding: 20px; /* Adjust padding if needed */
+        text-align: left; /* Center text and buttons */
+        left: 0;
+    }
+
+    .tittle {
+        font-size: 30px;
+        width: 100%; /* Adjust font size on mobile */
+        margin-top: 150px;
+    }
+
+
+    .button1, .button3 {
+        width: 100%; /* Make buttons take almost full width with spacing */
+        margin-top: -23px;
+    }
+    
+}
