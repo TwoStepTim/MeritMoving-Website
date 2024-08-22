@@ -26,7 +26,7 @@ a:hover {
 body {
   overflow-x: hidden;
   height: 100%; /* Set full height */
-  background-color: rgba(0, 0, 0, .5); /* Set background color */
+  background-color: rgb(235, 229, 223); /* Set background color */
   
 }
 
@@ -34,7 +34,7 @@ body {
   .navbar-scroll {
     background-color: #fff;
   }
-     
+  .navbar-brand
   .navbar-scroll .navbar-brand,
   .navbar-scroll .nav-link,
   .navbar-scroll .fa-bars {
@@ -46,7 +46,10 @@ body {
   letter-spacing: 3px;
   font-size: 2rem;
   font-weight: 500;
+  display: flex;
+  align-items: center; /* Aligns logo and text vertically */
 }
+
 .navbar-scroll .navbar-brand,
 .navbar-scroll .nav-link,
 .navbar-scroll .fa-bars {
@@ -55,20 +58,51 @@ body {
 
 .navbar-scroll {
   box-shadow: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 1000;
+  transition: top 0.3s ease;
 }
 
 .navbar-scrolled {
+  position: fixed; /* Once scrolled past the first section, becomes fixed */
+  background-color: #b00000;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.05);
 }
 
-.navbar-scrolled .navbar-brand,
-.navbar-scrolled .nav-link,
-.navbar-scrolled .fa-bars {
-  color: #4f4f4f;
+.navbar-animation {
+  animation: slideDown 0.5s ease forwards;
 }
 
-.navbar-scrolled {
-  background-color: #fff;
+@keyframes slideDown {
+  from {
+      top: -80px; /* Adjust as needed */
+  }
+  to {
+      top: 0;
+  }
+}
+
+/* Centering the links */
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Centers the links horizontally */
+  width: 30%; /* Ensure the container spans the full width */
+}
+
+.navbar-nav .nav-item {
+  margin-right: 20px;
+}
+
+.navbar-nav .nav-link {
+  padding: 10px 15px;
+}
+
+.navbar-nav .nav-item:last-child {
+  margin-right: 0;
 }
 
 
