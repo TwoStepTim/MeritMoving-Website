@@ -1,13 +1,14 @@
 a{
     text-decoration: none;
 }
-h1{
+h1, h2{
     font-family: "Bebas Neue", sans-serif;
 
 }
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
+
 .navbar-custom {
     background-color: #000; /* Black background */
     font-family: "Bebas Neue", sans-serif;
@@ -213,13 +214,17 @@ body{
     justify-content: center;
     
 }
+.teamPic{
+    width: 60vw; 
+    margin-top: -60px;
+}
 .mission{
+    margin-bottom: 300px;
 text-align: center;}
 
 .black-square h1 {
     font-size: 36px;
     text-align: center;
-
     margin-bottom: 20px;
     color: white;
 }
@@ -242,7 +247,83 @@ text-align: center;}
     font-weight: bold;
 }
 
+.Services h1{
+    font-size: 100px;
+}
 
+.Services h2{
+    font-size: 60px;
+}
+
+
+
+.hero-section {
+    position: relative;
+    height: 500px;
+    width: 100vw;
+    background-image: url('/img/v6_59.jpg'); /* Adjust this path as needed */
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity for the tent effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+
+.service-box {
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin: 0;
+}
+
+.services-row {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    margin-top: -24px;
+}
+
+.service-box img {
+    width: 50px;
+    height: 50px;
+}
+
+.last-minute-movers {
+    background-color: #FFA000; /* Example color */
+}
+
+.full-value-insurance {
+    background-color: #000; /* Example color */
+}
+
+.five-stars {
+    background-color: #ffffff; /* Example color */
+}
+.col-md-4 {
+    padding: 0;
+    margin: 0;
+
+}
 
 
 /* Hide button container on desktop */
@@ -269,6 +350,7 @@ text-align: center;}
 
 /* Ensure video height is adjusted on mobile */
 @media (max-width: 767px) {
+    
     .video-background {
         height: 40vh; /* 40% of the viewport height */
     }
@@ -300,4 +382,43 @@ text-align: center;}
         margin-top: -23px;
     }
     
+    .teamPic{
+        width: 150%;
+        margin-left: -110px;
+        margin-top: 0px;
+    }
+    .black-square {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        margin-top: 50px;
+        max-width: 100vw; /* Adjust as needed */
+        align-items: center;
+        margin-left: 50px;
+        justify-content: center;
+        
+    }
+    .mission{
+        text-align: center;}
+
+    .black-square h1 {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .mission p {
+        font-size: 16px;
+        text-align: left;
+        margin-bottom: 40px;
+        width: 85vw;
+    }
+    .Services h1{
+        font-size: 60px;
+    }
+    
+    .Services h2{
+        font-size: 40px;
+    }
 }
