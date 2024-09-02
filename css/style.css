@@ -234,6 +234,7 @@ body, html{
     justify-content: center;
     
 }
+
 .teamPic{
     width: 60vw; 
     margin-top: -60px;
@@ -408,6 +409,107 @@ text-align: center;}
     margin-right: 10px;
 }
 
+/* About Us */
+
+
+
+.black-square2 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    height: 300px;
+    max-width: 500px; /* Adjust as needed */
+    align-items: center;
+    justify-content: center;
+}
+.openTitle{
+    margin-top: 50px;
+
+    margin-bottom: 300px;
+    text-align: center;
+}
+.openTitle h1{
+    font-size: 90px;
+}
+.openTitle h2{
+    font-size: 45px;
+    margin-top: 50px;
+}
+.openTitle p{
+    font-size: 20px;
+    text-align: left;
+}
+.openTitle img{
+   width: 535px;
+   height: auto;
+   border-radius: 20px;
+}
+.MTT h1{
+    font-size: 100px;
+}
+
+
+/* 6. FQA */
+.fqa{
+    font-size: 70px;
+  }
+  
+  
+  .custom-section2 p{
+    font-size: 20px;
+  }
+  .accordion {
+    color: #000000;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 33px;
+    transition: 0.4s;
+    border: transparent;
+    margin-left: 0px;
+  
+  }
+  
+  .active, .accordion:hover {
+    background-color: #ffa200;
+  }
+  
+  .accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+  content: "\2212";
+  }
+  
+  .panel {
+    padding: 0 18px;
+    max-height: 0;
+    margin-left: 15px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+  .panel:hover{
+    background-color: #f0c478;
+  }
+  
+  .container {
+    padding: 20px 0;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
 /* Hide button container on desktop */
 @media (min-width: 992px) {
     .button-container-bottom {
@@ -518,5 +620,33 @@ text-align: center;}
       }
     .iframe{
         width: 100vw !important;
+    }
+
+    .black-square2 {
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+        margin-top: 50px;
+        max-width: 100vw; /* Adjust as needed */
+        align-items: center;
+        margin-right: 50px;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .openTitle h1{
+        font-size: 80px;
+    }
+    .openTitle h2{
+       margin-left: -40px !important;
+    }
+    .openTitle p{
+        width: auto !important;
+        margin-left: 0px !important;
+    }
+    .openTitle img{
+        width: 350px;
+    }
+    .MTT{
+        align-items: center;
     }
 }
