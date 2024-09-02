@@ -5,7 +5,7 @@ h1, h2{
     font-family: "Bebas Neue", sans-serif;
 
 }
-body{
+body, html{
     overflow-x: hidden !important;
 }
 
@@ -152,6 +152,26 @@ body{
     overflow: hidden;
     font-size: 18px; /* Font size for the top row */
 }
+.buttonMain2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 230px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    background-color: #000000; /* Button color */
+    color: #ffffff; /* Text color */
+    border: none;
+    border-radius: 5px; /* Optional: rounded corners */
+    text-align: center;
+    text-decoration: none; /* Remove underline for <a> tag */
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 25px; /* Font size for the top row */
+}
+.buttonMain2:hover {
+    transform: translateY(-5px); /* Small jump effect */
+    color: #ffffff;
+}
 
 .button2:hover {
     transform: translateY(-5px); /* Small jump effect */
@@ -185,7 +205,7 @@ body{
     margin-top: -20px;
 }
 
-.button1, .button3,.button2,.buttonMain{
+.button1, .button3,.button2,.buttonMain,.buttonMain2{
     transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
     text-decoration: none !important;
     font-family: "Bebas Neue", sans-serif;
@@ -326,6 +346,68 @@ text-align: center;}
 }
 
 
+.matt{
+    width: auto;
+    height: 600px;
+}
+
+
+/* General Footer Styling */
+.footer {
+    margin-top: 50px;
+    background-color: #000;
+}
+
+/* Logo Styling */
+.footer-logo {
+    width: 168px;
+    height: 177px;
+}
+
+/* Company Info Styling */
+.company-name {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+}
+
+.company-info, .company-contact {
+    font-family: 'Inter', sans-serif;
+}
+
+/* Divider Styling */
+.footer-divider {
+    border-left: 3px solid white;
+    height: 100%;
+}
+
+/* Areas We Serve Styling */
+.areas-served {
+    border-radius: 22px;
+    padding: 20px; /* Reduced padding */
+    width: 90%; /* Adjust the width to make it smaller */
+    margin: 0 auto; /* Center the box */
+}
+
+
+.areas-title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.areas-description, .area-name {
+    font-family: 'Inter', sans-serif;
+}
+
+.area-name {
+    font-weight: bold;
+}
+
+/* Social Icons Styling */
+.social-icons img {
+    margin-right: 10px;
+}
+
 /* Hide button container on desktop */
 @media (min-width: 992px) {
     .button-container-bottom {
@@ -420,5 +502,21 @@ text-align: center;}
     
     .Services h2{
         font-size: 40px;
+    }
+
+    .matt{
+        display: none;
+    }
+
+    .QUOTE{
+        text-align: center;
+    }
+    .mobile-center {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+      }
+    .iframe{
+        width: 100vw !important;
     }
 }
