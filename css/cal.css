@@ -1,0 +1,161 @@
+
+/* Yellow and Black background colors */
+.yellow-bg {
+    background-color: #FFC107;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+    border-radius: 40px;
+    margin-top: 50px;
+}
+
+.black-bg {
+    background-color: #000;
+    padding: 50px;
+    position: relative;
+    z-index: 2;
+    margin-left: -50px; /* Creates the overlap effect */
+    border-radius: 40px;
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 20vw;
+}
+
+
+/* Styles for the black section content */
+.content-box {
+    max-width: 400px;
+    margin: auto;
+    color: #ffffff;
+}
+
+.total-cost-title {
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff; /* Text color for black background */
+}
+
+.total-cost-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FFC107; /* Contrast color for emphasis */
+}
+
+.cost-details  {
+    margin-bottom: 30px;
+    
+}
+.cost-details p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    margin-bottom: 20px;
+    color: #fff; /* Text color for black background */
+}
+
+.call-to-action h3 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-top: 30px;
+    color: #FFC107; /* Contrast color for emphasis */
+}
+
+.call-to-action p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #fff; /* Text color for black background */
+}
+
+.btn-lg {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    background-color: #FFC107; /* Button color to match theme */
+    color: #000; /* Button text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-lg:hover {
+    background-color: #e0a800; /* Darker shade for hover effect */
+}
+
+.cost-header {
+display: flex;
+align-items: center; /* Align items vertically in the center */
+}
+
+.cost-header h3 {
+margin-right: 100px; /* Adjust spacing between h3 and small as needed */
+}
+
+.cost-header small {
+font-size: 0.875em; /* Optional: Adjust the font size of small if needed */
+}
+.call-button {
+display: flex;
+flex-direction: column; /* Stack text vertically */
+justify-content: center;
+align-items: center;
+width: 20vw; /* Adjust width as needed */
+height: 10vh; /* Adjust height as needed */
+background-color: #fff; /* Button color (white) */
+color: #000; /* Text color (black) */
+border: none;
+border-radius: 5px; /* Rounded corners */
+font-size: 30px; /* Font size for the top row */
+text-align: center;
+text-decoration: none; /* Remove underline */
+font-weight: bold;
+position: relative;
+overflow: hidden;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better appearance */
+}
+
+.call-button:hover {
+background-color: #f0f0f0; /* Light grey on hover for visual feedback */
+text-decoration: none; /* Remove underline */
+color: #e0a800; /* Text color (black) */
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+.yellow-bg, .black-bg {
+margin-left: 0; /* Remove overlap effect on smaller screens */
+margin-right: 0; /* Remove margin on the right side */
+padding: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+
+.total-cost-amount {
+font-size: 1.5rem;
+}
+
+.call-to-action h3 {
+font-size: 1.3rem;
+}
+
+.call-to-action p {
+font-size: 0.9rem;
+}
+
+.call-button{
+width: 100%; /* Adjust width as needed */
+height: 10vh; /* Adjust height as needed */
+}
+.btn-lg {
+font-size: 1rem;
+padding: 8px 15px;
+}
+}
+
+

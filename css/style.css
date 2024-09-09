@@ -7,7 +7,10 @@ h1, h2{
 }
 body, html{
     overflow-x: hidden !important;
+    font-family: "Inter", sans-serif;
+
 }
+
 
 .navbar-custom {
     background-color: #000; /* Black background */
@@ -276,6 +279,10 @@ text-align: center;}
     font-size: 60px;
 }
 
+.Pricing h1{
+    font-size: 100px;
+}
+
 
 
 .hero-section {
@@ -510,6 +517,26 @@ text-align: center;}
     text-align: center;
   }
   
+  .Pricing img{
+    width: 20vw;
+    height: 20vw;
+  }
+  #MP{
+    width: 30vw !important;
+    height: auto;
+  }
+  .MP{
+    padding: 0;
+    display: inline-block; /* Make the ul inline-block to center */
+    text-align: left; /* Align the text inside the ul to the left */
+  }
+  .Packages{
+    font-size: 2.4rem;
+  }
+  .Packages-p{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.3rem;
+}
 /* Hide button container on desktop */
 @media (min-width: 992px) {
     .button-container-bottom {
