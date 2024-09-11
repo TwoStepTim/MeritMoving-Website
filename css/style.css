@@ -218,6 +218,40 @@ body, html{
 
 
 }
+
+
+
+
+.custom-btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #FFAC0B;  /* Button background color */
+    color: #000000;  /* Button text color */
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: "Bebas Neue", sans-serif;  /* Button font */
+    border-radius: 5px;  /* Rounded corners */
+    border: 2px solid transparent;  /* Button border */
+    transition: all 0.3s ease;  /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Hover effect */
+.custom-btn:hover {
+    background-color: #000000;  /* Change background on hover */
+    color: #ffffff;  /* Change text color on hover */
+    border-color: #FFAC0B;  /* Border color on hover */
+    transform: translateY(-3px);  /* Slight lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Optional active state (when clicked) */
+.custom-btn:active {
+    transform: translateY(1px);  /* Push down slightly */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Less shadow */
+}
+
 /* Content Styles */
 .content {
     position: relative;
@@ -647,7 +681,7 @@ text-align: center;}
         margin-left: auto;
         margin-right: auto;
         display: block;
-      }
+    }
     .iframe{
         width: 100vw !important;
     }
