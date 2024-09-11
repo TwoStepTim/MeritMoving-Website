@@ -191,7 +191,56 @@
     </section>
 
 
-    
+    <!-- Booking Section: Optimized Structure -->
+<section class="Services">
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <h1>Book Your Move with Raleigh's Best Movers</h1> <!-- Updated for SEO and relevance -->
+                <hr>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quote Section: Performance-Optimized -->
+<section id="quote">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 QUOTE">
+                <h2>Get Your Free Moving Quote</h2> <!-- Changed to H2 for better SEO hierarchy -->
+                <p>Curious about moving costs in Raleigh? Get a free, no-obligation quote today. Whether you're moving across town or need last-minute movers, we’ve got you covered with affordable, reliable service.</p>
+                
+                <a href="pricing.html#Cal" class="buttonMain2 mobile-center">
+                    <strong>Start the Moving Calculator</strong><br>
+                </a>
+
+                <!-- Lazy-loaded image for performance -->
+                <img class="matt" src="img/Free Quote png.png" alt="Free Moving Quote" loading="lazy">
+            </div>
+
+            <div class="col-md-7">
+                <!-- Lazy-load iframe and provide a placeholder -->
+                <div id="iframe-container">
+                    <button id="loadForm" class="btn btn-secondary">Get a Free Moving Quote</button>
+                    <!-- Iframe will load when button is clicked -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    // Lazy-load iframe on button click
+    document.getElementById('loadForm').addEventListener('click', function () {
+        const iframeContainer = document.getElementById('iframe-container');
+        iframeContainer.innerHTML = `
+            <iframe class="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeCOv7_roMcoG-x1ztZcjrEJO4vc55Ds33Ukze0PtxmqMazvw/viewform?embedded=true"
+                width="100%" height="972" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        `;
+    });
+</script>
+
 
     <footer class="footer">
         <div class="container-fluid text-white py-5">
