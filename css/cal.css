@@ -125,9 +125,10 @@ color: #e0a800; /* Text color (black) */
 /* Responsive Design */
 @media (max-width: 768px) {
 .yellow-bg, .black-bg {
-margin-left: 0; /* Remove overlap effect on smaller screens */
+margin-left: 10px; /* Remove overlap effect on smaller screens */
 margin-right: 0; /* Remove margin on the right side */
-padding: 20px;
+padding: 30px;
+width: 95vw !important;
 }
 
 .form-group {

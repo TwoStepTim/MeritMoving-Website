@@ -35,6 +35,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
@@ -45,7 +48,7 @@
             </div>
 
             <!-- Button on the right (hidden on mobile) -->
-            <button class="btn btn-primary d-none d-lg-block">Free Quote</button>
+            <button class="btn btn-primary d-none d-lg-block" onclick="window.location.href='index.html#services'">Free Quote</button>
         </div>
     </nav>
 
@@ -67,7 +70,7 @@
                                 <strong>Call Us</strong> <br>
                                 <span class="button-subtext1">(919) 345-4202</span>
                             </a>
-                            <a href="#" class="button2">
+                            <a href="#qoute" class="button2">
                                 <strong>Start Online</strong> <br>
                                 <span class="button-subtext">Get a free moving <br> quote in seconds</span>
                             </a>
@@ -85,7 +88,7 @@
             <strong>Call Us</strong> <br>
             <span class="button-subtext1">(919) 345-4202</span>
         </a>
-        <a href="#" class="button3">
+        <a href="#qoute" class="button3">
             <strong>Start Online</strong> <br>
             <span class="button-subtext">Get a free moving <br> quote in seconds</span>
         </a>
@@ -94,7 +97,7 @@
     <section class="mission">
         <div class="row" >
             <div class="col-md-7">
-                <img class="teamPic" src="img/team (2).png" alt="" >
+                <img class="teamPic" src="img/TJ_add.jpg" alt="" >
             </div>
             <div class="col-md-5 black-square ">
                 <h1>The only way to move</h1>
@@ -106,7 +109,7 @@
         </div>
     </section >
 
-    <section class="Services">
+    <section id="services" class="Services">
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 text-center mb-4">
@@ -146,6 +149,7 @@
         </div>
     </section>
 
+    
     <section>
        
     <!-- Hero Section -->
@@ -188,24 +192,24 @@
         <div class="container mt-5">
             <div class="row">
                 <div class="col-12 text-center mb-4">
-                    <h1>Our Services</h1>
+                    <h1>Book Here</h1>
                     <hr>
                 </div>
             </div>
         </div>
     </section>
 
-    <section>
+    <section id="qoute">
         <div class="container">
             <div class="row">
                 <div class="col-md-5 QUOTE">
                     <h1>Get YOUR FREE QUOTE</h1>
                     <p>Curious about moving costs in Raleigh? Get a free, no-obligation quote today. Whether you're moving across town or need last-minute movers, we’ve got you covered with affordable, reliable service.</p>
-                    <a href="#" class="buttonMain2 mobile-center">
-                        <strong>Start Online</strong><br>
+                    <a href="pricing.html#Cal" class="buttonMain2 mobile-center">
+                        <strong>Moving Calculator</strong><br>
                     </a>
                     
-                    <img class="matt" src="img/v8_3.png" alt="">
+                    <img class="matt" src="img/Free Quote png.png" alt="">
                 </div>
                 <div class="col-md-7">
                     <iframe class="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeCOv7_roMcoG-x1ztZcjrEJO4vc55Ds33Ukze0PtxmqMazvw/viewform?embedded=true" width="602" height="972" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
@@ -232,8 +236,8 @@
                             <i class="fas fa-envelope"></i> meritmoving919@gmail.com
                         </p>
                         <div class="social-icons">
-                            <a href=""><img src="images/InstagramIconColor.png" alt="Instagram Icon"></a>
-                            <a href="#"><img src="images/FacebookIconColor.png" alt="Facebook Icon"></a>
+                            <a href="https://www.instagram.com/merit.moving/?hl=en" target="_blank"><img src="images/InstagramIconColor.png" alt="Instagram Icon"></a>
+                            <a href="https://www.facebook.com/MeritMoving919/" target="_blank"><img src="images/FacebookIconColor.png" alt="Facebook Icon"></a>
                         </div>
                     </div>
                 </div>
@@ -269,6 +273,19 @@
     </footer>
     
     <!-- Bootstrap JS and dependencies -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+      
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth',
+              block: 'start'
+            });
+          });
+        });
+      </script>
+      
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

@@ -56,6 +56,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
+                    <li class="nav-item"></li>
+                        <a class="nav-link" href="index.html#services">Services</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="pricing.html">Pricing</a>
                     </li>
@@ -66,10 +69,9 @@
             </div>
 
             <!-- Button on the right (hidden on mobile) -->
-            <button class="btn btn-primary d-none d-lg-block">Free Quote</button>
+            <button class="btn btn-primary d-none d-lg-block" onclick="window.location.href='index.html#services'">Free Quote</button>
         </div>
     </nav>
-
     <section class="Pricing">
         <div class="container mt-5">
             <div class="row">
@@ -145,131 +147,136 @@
         </div>
       
     </section>
-    <div class="container">
-        <div class="row">
-            <!-- Yellow Section -->
-            <div class="col-md-6 yellow-bg">
-                <h1 class="total-cost-title">Moving Cost Calculator</h1>
-                <form id="movingForm" class="mt-4">
-                    <div class="form-group">
-                        <label for="bedrooms">Home Size:</label>
-                        <select id="bedrooms" name="bedrooms" class="form-control" onchange="calculateCost()">
-                            <option value="1">1 Bedroom</option>
-                            <option value="2">2 Bedrooms</option>
-                            <option value="3">3 Bedrooms</option>
-                            <option value="4">4 Bedrooms</option>
-                            <option value="5">5+ Bedrooms</option>
-                        </select>
-                        <small>Select the size of your home</small>
-                    </div>
+
+    <section id="Cal">
+        
+        <div class="container">
+            <div class="row">
+                <!-- Yellow Section -->
+                <div class="col-md-6 yellow-bg">
+                    <h1 class="total-cost-title">Moving Cost Calculator</h1>
+                    <form id="movingForm" class="mt-4">
+                        <div class="form-group">
+                            <label for="bedrooms">Home Size:</label>
+                            <select id="bedrooms" name="bedrooms" class="form-control" onchange="calculateCost()">
+                                <option value="1">1 Bedroom</option>
+                                <option value="2">2 Bedrooms</option>
+                                <option value="3">3 Bedrooms</option>
+                                <option value="4">4 Bedrooms</option>
+                                <option value="5">5+ Bedrooms</option>
+                            </select>
+                            <small>Select the size of your home</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="truck">Do you need a truck?</label>
+                            <input type="checkbox" id="truck" name="truck" onchange="calculateCost()">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="flights">Number of Flights:</label>
+                            <select id="flights" name="flights" class="form-control" onchange="calculateCost()">
+                                <option value="0">0 Flights</option>
+                                <option value="1">1 Flight</option>
+                                <option value="2">2 Flights</option>
+                                <option value="3">3 Flights</option>
+                                <option value="4">4 Flights</option>
+                            </select>
+                            <small>Select the number of flights of stairs</small>
+                        </div>
+
+                        <fieldset class="form-group">
+                            <legend>Specialty Items</legend>
+                            <div class="form-check">
+                                <input type="checkbox" id="appliances" name="specialtyItems" value="30" onchange="calculateCost()" class="form-check-input">
+                                <label class="form-check-label" for="appliances">Appliances</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="workoutEquipment" name="specialtyItems" value="30" onchange="calculateCost()" class="form-check-input">
+                                <label class="form-check-label" for="workoutEquipment">Workout Equipment</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="safe" name="specialtyItems" value="30" onchange="calculateCost()" class="form-check-input">
+                                <label class="form-check-label" for="safe">Safe</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="other" name="specialtyItems" value="60" onchange="calculateCost()" class="form-check-input">
+                                <label class="form-check-label" for="other">Other</label>
+                            </div>
+                            <small>Select any specialty items you may have</small>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                            <legend>Additional Services</legend>
+                            <div class="form-check">
+                                <input type="checkbox" id="fullProtection" name="additionalServices" value="0" onchange="calculateCost()" class="form-check-input">
+                                <label class="form-check-label" for="fullProtection">Full Value Protection</label>
+                            </div>
+                        </fieldset>
+                        
+                    </form>
+                </div>
+
+                <!-- Black Section -->
+                <div class="col-md-6 black-bg">
+                    <div class="content-box">
+                        <h2 class="total-cost-title">Total Moving Cost</h2>
+                        <small>This is the total estimated cost of your move.</small>
+
+                        <p id="totalCost" class="total-cost-amount">$0.00</p>
+
+                        <div class="cost-details">
+
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Hourly Cost</h3>                                
+                                    <small>This is how much you will be charged per hour.</small>
+                                </div>
+                                <div class="col-4">
+                                    <p id="hourlyCost">$0.00</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="cost-details">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Additional Services</h3>
+                                    <small>Cost of extra services you selected.</small>
+                                </div>
+                                <div class="col-4">
+                                    <p id="additionalServicesCost">$0.00</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cost-details">
+
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3>Estimated Time</h3>
+                                    <small>This is how long we think it will take. You are only charged for the hours we work.</small>
+                                </div>
+                                <div class="col-4">
+                                    <p id="totalTime">0 hours</p>
+                                </div>
+                            </div>
+
+                        </div>
+
                     
-                    <div class="form-group">
-                        <label for="truck">Do you need a truck?</label>
-                        <input type="checkbox" id="truck" name="truck" onchange="calculateCost()">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="flights">Number of Flights:</label>
-                        <select id="flights" name="flights" class="form-control" onchange="calculateCost()">
-                            <option value="0">0 Flights</option>
-                            <option value="1">1 Flight</option>
-                            <option value="2">2 Flights</option>
-                            <option value="3">3 Flights</option>
-                            <option value="4">4 Flights</option>
-                        </select>
-                        <small>Select the number of flights of stairs</small>
-                    </div>
 
-                    <fieldset class="form-group">
-                        <legend>Specialty Items</legend>
-                        <div class="form-check">
-                            <input type="checkbox" id="appliances" name="specialtyItems" value="30" onchange="calculateCost()" class="form-check-input">
-                            <label class="form-check-label" for="appliances">Appliances</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" id="workoutEquipment" name="specialtyItems" value="30" onchange="calculateCost()" class="form-check-input">
-                            <label class="form-check-label" for="workoutEquipment">Workout Equipment</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" id="safe" name="specialtyItems" value="30" onchange="calculateCost()" class="form-check-input">
-                            <label class="form-check-label" for="safe">Safe</label>
-                        </div>
-                        <div class="form-check">
-                            <input type="checkbox" id="other" name="specialtyItems" value="60" onchange="calculateCost()" class="form-check-input">
-                            <label class="form-check-label" for="other">Other</label>
-                        </div>
-                        <small>Select any specialty items you may have</small>
-                    </fieldset>
-
-                    <fieldset class="form-group">
-                        <legend>Additional Services</legend>
-                        <div class="form-check">
-                            <input type="checkbox" id="fullProtection" name="additionalServices" value="0" onchange="calculateCost()" class="form-check-input">
-                            <label class="form-check-label" for="fullProtection">Full Value Protection</label>
-                        </div>
-                    </fieldset>
-                    
-                </form>
-            </div>
-
-            <!-- Black Section -->
-            <div class="col-md-6 black-bg">
-                <div class="content-box">
-                    <h2 class="total-cost-title">Total Moving Cost</h2>
-                    <small>This is the total estimated cost of your move.</small>
-
-                    <p id="totalCost" class="total-cost-amount">$0.00</p>
-
-                    <div class="cost-details">
-
-                        <div class="row">
-                            <div class="col-8">
-                                <h3>Hourly Cost</h3>                                
-                                <small>This is how much you will be charged per hour.</small>
-                            </div>
-                            <div class="col-4">
-                                <p id="hourlyCost">$0.00</p>
-                            </div>
-                        </div>
+                        <h3>Ready to Make Your Move?</h3>
+                        <p>Contact us today to book your move and take the stress out of moving. Get a professional service at an affordable rate.</p>
+                        <a href="tel:+1234567890" class="call-button">Call Us Now!</a>
 
                     </div>
-
-                    <div class="cost-details">
-                        <div class="row">
-                            <div class="col-8">
-                                <h3>Additional Services</h3>
-                                <small>Cost of extra services you selected.</small>
-                            </div>
-                            <div class="col-4">
-                                <p id="additionalServicesCost">$0.00</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="cost-details">
-
-                        <div class="row">
-                            <div class="col-8">
-                                <h3>Estimated Time</h3>
-                                <small>This is how long we think it will take. You are only charged for the hours we work.</small>
-                            </div>
-                            <div class="col-4">
-                                <p id="totalTime">0 hours</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                   
-
-                    <h3>Ready to Make Your Move?</h3>
-                    <p>Contact us today to book your move and take the stress out of moving. Get a professional service at an affordable rate.</p>
-                    <a href="tel:+1234567890" class="call-button">Call Us Now!</a>
-
                 </div>
             </div>
         </div>
-    </div>
+
+    </section>
 
     <script src="script.js"></script>
     <footer class="footer">
@@ -289,8 +296,8 @@
                             <i class="fas fa-envelope"></i> meritmoving919@gmail.com
                         </p>
                         <div class="social-icons">
-                            <a href=""><img src="images/InstagramIconColor.png" alt="Instagram Icon"></a>
-                            <a href="#"><img src="images/FacebookIconColor.png" alt="Facebook Icon"></a>
+                            <a href="https://www.instagram.com/merit.moving/?hl=en" target="_blank"><img src="images/InstagramIconColor.png" alt="Instagram Icon"></a>
+                            <a href="https://www.facebook.com/MeritMoving919/" target="_blank"><img src="images/FacebookIconColor.png" alt="Facebook Icon"></a>
                         </div>
                     </div>
                 </div>
