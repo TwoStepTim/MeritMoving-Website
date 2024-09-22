@@ -38,7 +38,7 @@
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
             <!-- Logo on the left -->
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="img/OG Logo BK.jpg" alt="Logo" style="height: 100px;">
             </a>
 
@@ -69,7 +69,7 @@
             </div>
 
             <!-- Button on the right (hidden on mobile) -->
-            <button class="btn btn-primary d-none d-lg-block" onclick="window.location.href='index.html#services'">Free Quote</button>
+            <button class="btn btn-primary d-none d-lg-block" onclick="window.location.href='index.html#quote'">Free Quote</button>
         </div>
     </nav>
 
@@ -87,13 +87,13 @@
                     <div class="col-md-8">
                         <h1 class="tittle">Best Movers In Raleigh <br>Quick & Easy</h1>
                         <div class="button-container button-container-desk">
-                            <a href="#" class="button1">
+                            <a href="tel:+19193454202" class="button1">
                                 <strong>Call Us</strong> <br>
                                 <span class="button-subtext1">(919) 345-4202</span>
-                            </a>
-                            <a href="#qoute" class="button2">
+                            </a>                            
+                            <a href="#quote" class="button2">
                                 <strong>Start Online</strong> <br>
-                                <span class="button-subtext">Get a free moving <br> quote in seconds</span>
+                                <span class="button-subtext">Get a free moving <br> quote in <b>Today!</b></span>
                             </a>
                             
                         </div>
@@ -109,9 +109,9 @@
             <strong>Call Us</strong> <br>
             <span class="button-subtext1">(919) 345-4202</span>
         </a>
-        <a href="#qoute" class="button3">
+        <a href="#quote" class="button3">
             <strong>Start Online</strong> <br>
-            <span class="button-subtext">Get a free moving <br> quote in seconds</span>
+            <span class="button-subtext">Get a free moving <br> quote in <b>Today!</b></span>
         </a>
     </div>
 
@@ -123,8 +123,8 @@
             <div class="col-md-5 black-square ">
                 <h1>The only way to move</h1>
                 <p>Moving in Raleigh is easier with Merit Moving. Whether planned or last-minute, our affordable services ensure a smooth transition. From careful transport to junk removal, we handle it all. Discover why we're a top choice in Raleigh.</p>
-                <a href="#" class="buttonMain">
-                    <strong>Start Online</strong><br>
+                <a href="#quote" class="buttonMain">
+                    <strong>Fill Out our questionnaire!</strong><br>
                 </a>
             </div>
         </div>
@@ -228,7 +228,7 @@
                     <h2>Get Your Free Moving Quote</h2> <!-- Changed to H2 for better SEO hierarchy -->
                     <p>Curious about moving costs in Raleigh? Get a free, no-obligation quote today. Whether you're moving across town or need last-minute movers, we’ve got you covered with affordable, reliable service.</p>
                     
-                    <a href="pricing.html#Cal" class="buttonMain2 mobile-center">
+                    <a href="pricing.html#Cal" id="cal-button" class="buttonMain2 mobile-center">
                         <strong>Moving Calculator</strong><br>
                     </a>
 
@@ -236,10 +236,14 @@
                     <img class="matt" src="img/Free Quote png.png" alt="Free Moving Quote" loading="lazy">
                 </div>
 
-                <div class="col-md-7">
+                <div id="questionnaire" class="col-md-7">
+                    <h2>Get a Moving Quote from Raleigh’s Top-Rated Moving Company</h2> <!-- Changed to H2 for better SEO hierarchy -->
+                    <p>Start your move with confidence by filling out our easy-to-use moving quote form. Whether you need an estimate for a last-minute move or are planning ahead, our Raleigh moving experts are here to provide you with a fast and accurate moving estimate. Simply provide the necessary details, and we'll tailor your quote to fit your needs, ensuring an affordable and stress-free moving experience. Get your free moving estimate today and see why we’re one of the top-rated moving companies in Raleigh.
+
+                </p>
                     <!-- Lazy-load iframe and provide a placeholder -->
                     <div id="iframe-container" style="text-align: center;">
-                        <button id="loadForm" class=" btn btn-secondary custom-btn ">Get a Free Moving Quote</button>
+                        <button id="loadForm" class="custom-btn ">Request a Moving Estimate </button>
                         <!-- Iframe will load when button is clicked -->
                     </div>
                 </div>

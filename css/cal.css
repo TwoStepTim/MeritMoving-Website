@@ -1,4 +1,7 @@
+body{
+    font-family: 'Inter', sans-serif;
 
+}
 /* Yellow and Black background colors */
 .yellow-bg {
     background-color: #FFC107;
@@ -96,29 +99,30 @@ margin-right: 100px; /* Adjust spacing between h3 and small as needed */
 font-size: 0.875em; /* Optional: Adjust the font size of small if needed */
 }
 .call-button {
-display: flex;
-flex-direction: column; /* Stack text vertically */
-justify-content: center;
-align-items: center;
-width: 20vw; /* Adjust width as needed */
-height: 10vh; /* Adjust height as needed */
-background-color: #fff; /* Button color (white) */
-color: #000; /* Text color (black) */
-border: none;
-border-radius: 5px; /* Rounded corners */
-font-size: 30px; /* Font size for the top row */
-text-align: center;
-text-decoration: none; /* Remove underline */
-font-weight: bold;
-position: relative;
-overflow: hidden;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better appearance */
+    font-family: 'Bebas Neue', sans-serif;
+    display: flex;
+    flex-direction: column; /* Stack text vertically */
+    justify-content: center;
+    align-items: center;
+    width: 20vw; /* Adjust width as needed */
+    height: 10vh; /* Adjust height as needed */
+    background-color: #fff; /* Button color (white) */
+    color: #000; /* Text color (black) */
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    font-size: 30px; /* Font size for the top row */
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds shadow for better appearance */
 }
 
 .call-button:hover {
-background-color: #f0f0f0; /* Light grey on hover for visual feedback */
-text-decoration: none; /* Remove underline */
-color: #e0a800; /* Text color (black) */
+    background-color: #f0f0f0; /* Light grey on hover for visual feedback */
+    text-decoration: none; /* Remove underline */
+    color: #e0a800; /* Text color (black) */
 
 }
 

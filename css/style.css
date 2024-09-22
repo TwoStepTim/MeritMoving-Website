@@ -1,5 +1,5 @@
 a{
-    text-decoration: none;
+    text-decoration: none !important;
 }
 h1, h2{
     font-family: "Bebas Neue", sans-serif;
@@ -150,13 +150,21 @@ body, html{
     background-color: #ffffff; /* Button color */
     color: #000000; /* Text color */
     border: none;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 20px !important; /* Optional: rounded corners */
     text-align: center;
     text-decoration: none; /* Remove underline for <a> tag */
     font-weight: bold;
     overflow: hidden;
     font-size: 18px; /* Font size for the top row */
 }
+
+.buttonMain:hover {
+    transform: translateY(-5px); /* Small jump effect */
+    color: #cb0000;
+    background-color: #FFAC0B !important; /* Button color */
+
+}
+
 .buttonMain2 {
     display: flex;
     justify-content: center;
@@ -166,7 +174,7 @@ body, html{
     background-color: #000000; /* Button color */
     color: #ffffff; /* Text color */
     border: none;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 20px !important; /* Optional: rounded corners */
     text-align: center;
     text-decoration: none; /* Remove underline for <a> tag */
     font-weight: bold;
@@ -175,7 +183,9 @@ body, html{
 }
 .buttonMain2:hover {
     transform: translateY(-5px); /* Small jump effect */
-    color: #ffffff;
+    color: #000;
+    background-color: #FFAC0B; /* Button color */
+
 }
 
 .button2:hover {
@@ -194,7 +204,7 @@ body, html{
     background-color: #FFAC0B; /* Button color */
     color: #000000; /* Text color */
     border: none;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 20px !important; /* Optional: rounded corners */
     text-align: center;
     text-decoration: none; /* Remove underline for <a> tag */
     font-weight: bold;
@@ -231,7 +241,7 @@ body, html{
     text-decoration: none;
     font-size: 18px;
     font-family: "Bebas Neue", sans-serif;  /* Button font */
-    border-radius: 5px;  /* Rounded corners */
+    border-radius: 20px !important; /* Optional: rounded corners */
     border: 2px solid transparent;  /* Button border */
     transition: all 0.3s ease;  /* Smooth transition */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow */
@@ -373,7 +383,7 @@ text-align: center;}
 }
 
 .last-minute-movers {
-    background-color: #FFA000; /* Example color */
+    background-color: #FFAC0B; /* Example color */
 }
 
 .full-value-insurance {
@@ -467,6 +477,7 @@ text-align: center;}
     align-items: center;
     justify-content: center;
 }
+
 .openTitle{
     margin-top: 50px;
 
@@ -479,6 +490,7 @@ text-align: center;}
 .openTitle h2{
     font-size: 45px;
     margin-top: 50px;
+    margin-right: 0;
 }
 .openTitle p{
     font-size: 20px;
@@ -493,6 +505,10 @@ text-align: center;}
     font-size: 100px;
 }
 
+.MTT img{
+    width: 420px;
+    align-self: center;
+}
 
 /* 6. FQA */
 .fqa{
@@ -542,10 +558,7 @@ text-align: center;}
     overflow: hidden;
     transition: max-height 0.2s ease-out;
   }
-  .panel:hover{
-    background-color: #f0c478;
-  }
-  
+
   .container {
     padding: 20px 0;
   }
@@ -682,6 +695,13 @@ text-align: center;}
         margin-right: auto;
         display: block;
     }
+    #cal-button{
+        height: 40px;
+        margin-bottom: 50px;
+    }
+    #questionnaire{
+        text-align: center;
+    }
     .iframe{
         width: 100vw !important;
     }
@@ -700,12 +720,14 @@ text-align: center;}
     .openTitle h1{
         font-size: 80px;
     }
-    .openTitle h2{
-       margin-left: -40px !important;
-    }
+    
     .openTitle p{
-        width: auto !important;
-        margin-left: 0px !important;
+        text-align: center;
+        width: 90vw;
+        margin-left: 5vw;
+    }
+    #cv{
+        margin-left: 0;
     }
     .openTitle img{
         width: 350px;
