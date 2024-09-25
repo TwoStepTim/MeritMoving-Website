@@ -204,7 +204,6 @@ body, html{
     background-color: #FFAC0B; /* Button color */
     color: #000000; /* Text color */
     border: none;
-    border-radius: 20px !important; /* Optional: rounded corners */
     text-align: center;
     text-decoration: none; /* Remove underline for <a> tag */
     font-weight: bold;
@@ -621,6 +620,9 @@ text-align: center;}
     cursor: pointer;
 }
 
+#badge{
+    width: 30vw;
+}
 /* Hide button container on desktop */
 @media (min-width: 992px) {
     .button-container-bottom {
@@ -643,9 +645,17 @@ text-align: center;}
     }
 }
 
+@media (min-width: 1300px){
+    .content {
+        top: 7rem;
+    }
+}
 /* Ensure video height is adjusted on mobile */
 @media (max-width: 767px) {
     
+    #badge{
+        width: 90vw;
+    }
     .video-background {
         height: 40vh; /* 40% of the viewport height */
     }
