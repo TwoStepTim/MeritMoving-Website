@@ -60,12 +60,12 @@
             <a class="navbar-brand" href="index.html">
                 <img src="img/OG Logo BK.jpg" alt="Logo" style="height: 100px;">
             </a>
-
+      
             <!-- Navbar Toggler for mobile -->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
+      
             <!-- Navbar links (centered) -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="navbar-nav">
@@ -84,16 +84,19 @@
                     <li class="nav-item">
                         <a class="nav-link" href="faq.html">FAQ</a>
                     </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Blog.html">Blog</a>
+                  </li>
                     <li class="nav-item"></li>
                         <a class="nav-link" href="gallery.html">gallery</a>
                     </li>
                 </ul>
             </div>
-
+      
             <!-- Button on the right (hidden on mobile) -->
             <button class="btn btn-primary d-none d-lg-block" onclick="window.location.href='index.html#quote'">Free Quote</button>
         </div>
-    </nav>
+      </nav>
 
     <!-- Video Background Section -->
     <section class="video-background">
@@ -272,7 +275,7 @@
                         <button id="loadForm" class="custom-btn ">Request a Moving Estimate </button>
                         <!-- Iframe will load when button is clicked -->
                     </div>
-                    <a href="https://www.localmovers.com/movers-in-raleigh#merit-moving" target="_blank" rel="noopener noreferrer">  <img id="badge" src="img/unnamed.jpg" alt=""></a>
+                    <a href="https://www.localmovers.com/movers-in-raleigh#merit-moving" target="_blank" rel="noopener noreferrer">  <img  id="badge" src="img/unnamed.jpg" alt=""></a>
 
                 </div>
             </div>
@@ -284,15 +287,187 @@
         // Lazy-load iframe on button click
         document.getElementById('loadForm').addEventListener('click', function () {
             const iframeContainer = document.getElementById('iframe-container');
-            iframeContainer.innerHTML = `
-                <iframe class="iframe" src="https://docs.google.com/forms/d/e/1FAIpQLSeCOv7_roMcoG-x1ztZcjrEJO4vc55Ds33Ukze0PtxmqMazvw/viewform?embedded=true"
-                    width="100%" height="972" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            `;
+            iframeContainer.innerHTML = `<div class="container mt-5">
+        <h2 class="text-center">Merit Moving Quote Questionnaire</h2>
+        <p class="text-center">Thank you so much for your interest in Merit Moving! To help us get a quote back to you as soon as possible, please help us out by answering these few questions below!</p>
+
+        <form action="questionnaire.php" method="post">
+
+            <!-- Name -->
+            <div class="form-group text-left">
+                <label for="name">Please provide your name (first & last):</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <!-- Phone Number -->
+            <div class="form-group text-left">
+                <label for="phone">Please provide your number:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <!-- Email -->
+            <div class="form-group text-left">
+                <label for="email">Please provide your email:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <!-- Type of Move -->
+            <div class="form-group text-left">
+                <p>What type of move do you need help with?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="complete_move" name="move_type" value="Complete move">
+                    <label for="complete_move" class="form-check-label">Complete move (Wrapping, Loading, Unloading, assembling/disassembling)</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="unload_only" name="move_type" value="Unload or Loading only">
+                    <label for="unload_only" class="form-check-label">Unload or Loading only</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="furniture_transport" name="move_type" value="Furniture transportation">
+                    <label for="furniture_transport" class="form-check-label">Furniture transportation</label>
+                </div>
+            </div>
+
+            <!-- Truck Provision -->
+            <div class="form-group text-left">
+                <p>Do you have your own truck or would you like our team to provide one?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="own_truck" name="truck_provision" value="Yes, I have my own">
+                    <label for="own_truck" class="form-check-label">Yes, I have my own</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="need_truck" name="truck_provision" value="No, I need you to provide one">
+                    <label for="need_truck" class="form-check-label">No, I need you to provide one</label>
+                </div>
+            </div>
+
+            <!-- Size of Move -->
+            <div class="form-group text-left">
+                <label for="move_size">What's the size of the move?</label>
+                <select id="move_size" name="move_size" class="form-control" required>
+                    <option value="1-2 pieces of furniture">1 or 2 pieces of furniture</option>
+                    <option value="1 Bedroom">1 Bedroom</option>
+                    <option value="2 Bedroom">2 Bedroom</option>
+                    <option value="3 Bedroom">3 Bedroom</option>
+                    <option value="4 Bedroom">4 Bedroom</option>
+                    <option value="5+ Bedroom">5+ Bedroom</option>
+                    <option value="Office">Office</option>
+                </select>
+            </div>
+
+            <!-- Stairs -->
+            <div class="form-group text-left">
+                <label for="stairs">Would you need help moving up a flight of stairs? If so, how many?</label>
+                <input type="text" class="form-control" id="stairs" name="stairs">
+            </div>
+
+            <!-- Mattresses -->
+            <div class="form-group text-left">
+                <label for="mattresses">Do you have mattresses you need moved? If so, how many and what sizes?</label>
+                <input type="text" class="form-control" id="mattresses" name="mattresses">
+            </div>
+
+            <!-- Wrapping -->
+            <div class="form-group text-left">
+                <p>We always wrap our clients' furniture and items, but did you plan on wrapping yourself?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="wrap_self" name="wrapping" value="Yes, we will wrap everything ourselves">
+                    <label for="wrap_self" class="form-check-label">Yes, we will wrap everything ourselves</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="need_wrapping" name="wrapping" value="No, we will need wrapping">
+                    <label for="need_wrapping" class="form-check-label">No, we will need wrapping</label>
+                </div>
+            </div>
+
+            <!-- Special/Heavier Items -->
+            <div class="form-group text-left">
+                <p>Are there any special/heavier items?</p>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="appliances" name="special_items[]" value="Appliances (Washer, Dryer, Fridge)">
+                    <label for="appliances" class="form-check-label">Appliances (Washer, Dryer, Fridge)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="workout_equipment" name="special_items[]" value="Workout equipment (Treadmill, Elliptical, Weight set)">
+                    <label for="workout_equipment" class="form-check-label">Workout equipment (Treadmill, Elliptical, Weight set)</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="safe" name="special_items[]" value="Safe">
+                    <label for="safe" class="form-check-label">Safe</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="piano" name="special_items[]" value="Piano">
+                    <label for="piano" class="form-check-label">Piano</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="other" name="special_items[]" value="Other">
+                    <label for="other" class="form-check-label">Other</label>
+                </div>
+            </div>
+
+            <!-- Disassembly/Reassembly -->
+            <div class="form-group text-left">
+                <label for="disassembly">Do you need any furniture disassembled or reassembled? If so, what?</label>
+                <input type="text" class="form-control" id="disassembly" name="disassembly">
+            </div>
+
+            <!-- Preferred Date of Move -->
+            <div class="form-group text-left">
+                <label for="move_date">Preferred date of move, if you have one:</label>
+                <input type="date" class="form-control" id="move_date" name="move_date">
+            </div>
+
+            <!-- Starting Address -->
+            <div class="form-group text-left">
+                <label for="starting_address">What is the starting address of your move?</label>
+                <input type="text" class="form-control" id="starting_address" name="starting_address" required>
+            </div>
+
+            <!-- Ending Address -->
+            <div class="form-group text-left">
+                <label for="ending_address">What is the ending address?</label>
+                <input type="text" class="form-control" id="ending_address" name="ending_address" required>
+            </div>
+
+            <!-- How Did You Find Us -->
+            <div class="form-group text-left">
+                <p>How did you come across our company?</p>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="recommendation" name="referral" value="Recommendation">
+                    <label for="recommendation" class="form-check-label">Recommendation</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="google" name="referral" value="Google">
+                    <label for="google" class="form-check-label">Google</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="social_media" name="referral" value="Social Media">
+                    <label for="social_media" class="form-check-label">Social Media</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="flyer_card" name="referral" value="Flyer/Card">
+                    <label for="flyer_card" class="form-check-label">Flyer/Card</label>
+                </div>
+            </div>
+
+            <!-- Additional Information -->
+            <div class="form-group text-left">
+                <label for="additional_info">Any additional information you would like us to know? Place it here:</label>
+                <textarea id="additional_info" name="additional_info" class="form-control" rows="4"></textarea>
+            </div>
+
+            <!-- Photo Instruction -->
+            <p class="text-left">Please send us photos of everything you would like moved. Text your photos with your name to our business number! ⮕ 919-345-4202</p>
+
+            <!-- Submit Button -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+
+        </form>
+    </div>`;
         });
     </script>
 
-<div class="container">
-</div>
+    
 
     <footer class="footer">
         <div class="container-fluid text-white py-5">
@@ -311,8 +486,8 @@
                             <i class="fas fa-envelope"></i> meritmoving919@gmail.com
                         </p>
                         <div class="social-icons">
-                            <a href="https://www.instagram.com/merit.moving/?hl=en" target="_blank"><img src="images/InstagramIconColor.png" alt="Instagram Icon"></a>
-                            <a href="https://www.facebook.com/MeritMoving919/" target="_blank"><img src="images/FacebookIconColor.png" alt="Facebook Icon"></a>
+                            <a href="https://www.instagram.com/merit.moving/?hl=en" target="_blank"><img id="insta" src="img/instagramIcon.PNG" alt="Instagram Icon"></a>
+                            <a href="https://www.facebook.com/MeritMoving919/" target="_blank"><img id="facebook" src="img/Facebook_logo_(square).png" alt="Facebook Icon"></a>
                         </div>
                     </div>
                 </div>

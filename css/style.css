@@ -620,8 +620,49 @@ text-align: center;}
     cursor: pointer;
 }
 
+#insta{
+    width: 3rem;
+}
+#facebook{
+    width: 3rem;
+}
+
 #badge{
     width: 30vw;
+    margin-left: 35px;
+}
+  /* Custom color for selected elements */
+  .form-check-input:checked {
+    background-color: #FFAC0B!important;
+    border-color: #FFAC0B !important;
+}
+
+.form-control:focus {
+    border-color: #FFAC0B !important;
+    box-shadow: 0 0 0 0.2rem rgba(255, 172, 11, 0.25) !important;
+}
+
+.form-group{
+    accent-color: #FFAC0B;
+}
+
+.form-check-input{
+    color: #FFAC0B !important;
+
+}
+.btn-primary {
+    background-color: #FFAC0B !important;
+    border-color: #FFAC0B !important;
+}
+
+.btn-primary:hover {
+    background-color: #e0990a !important;
+    border-color: #e0990a!important;
+}
+
+/* Align text to the left */
+.text-left {
+    text-align: left;
 }
 /* Hide button container on desktop */
 @media (min-width: 992px) {
@@ -655,6 +696,7 @@ text-align: center;}
     
     #badge{
         width: 90vw;
+        margin-left: 0;
     }
     .video-background {
         height: 40vh; /* 40% of the viewport height */

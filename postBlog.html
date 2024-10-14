@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Blogs</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+
+     <div class="container mt-2">
+         <div class="card">
+             <div class="card-body">
+                 <form id="post-form">
+                    <center><h3>Make A Blog</h3></center>
+<input type="text" id="title" class="form-control" placeholder="Title (required)">
+<input type="text" id="author" class="form-control" placeholder="Author (optional)">
+<input type="text" id="location" class="form-control" placeholder="Location (optional)">
+<input type="date" id="date" class="form-control" placeholder="Date (required)">
+<textarea id="post" class="form-control" placeholder="What's on your mind..."></textarea>
+<input type="file" class="form-control" id="image" accept="images/*">
+<input type="text" id="category" class="form-control" placeholder="Category (optional)">
+<div class="text-center">
+    <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+</div>
+
+
+                 </form>
+              </div>
+
+         </div>
+         <div class="row mt-4" id="posts">
+
+         </div>
+
+     </div>
+
+
+
+
+
+
+
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first...make sure you remove -app from below line -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+    apiKey: "AIzaSyD9t3-Posz7kwqfPYUNO2Fuqr3reJk85HU",
+    authDomain: "test-blog-267b4.firebaseapp.com",
+    databaseURL: "https://test-blog-267b4-default-rtdb.firebaseio.com",
+    projectId: "test-blog-267b4",
+    storageBucket: "test-blog-267b4.appspot.com",
+    messagingSenderId: "792098821482",
+    appId: "1:792098821482:web:26ff52d2c6907702360113",
+    measurementId: "G-3Z0Q1YWCNH"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+    </script>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="default.js"></script>
+</body>
+</html>

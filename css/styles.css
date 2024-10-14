@@ -1,0 +1,260 @@
+a{
+  text-decoration: none !important;
+}
+h1, h2{
+  font-family: "Bebas Neue", sans-serif;
+
+}
+body, html{
+  overflow-x: hidden !important;
+  font-family: "Inter", sans-serif;
+  scroll-behavior: smooth !important;
+
+
+}
+/* Header background with image */
+.bg-header {
+  background-image: url('/img/blog-bg.png'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 400px; /* Adjust the height to your preference */
+  position: relative;
+  color: white; /* Default text color */
+}
+
+.bg-header .text-center {
+  position: relative;
+  z-index: 2;
+}
+
+.bg-header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text contrast */
+  z-index: 1;
+}
+
+.text-white {
+  color: #fff !important;
+}
+
+
+.btn-primary-nav {
+  height: 7rem; /* Full height */
+  width: 10%; /* Fixed width */
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.btn-primary {
+  background-color: #FFAC0B !important;
+  border-color: #FFAC0B !important;
+  color: #000 !important;
+}
+
+.page-item.active .page-link {
+  background-color: #FFAC0B !important;
+  border-color: #FFAC0B !important;
+  color: #fff !important; /* Ensure the text color is white for contrast */
+}
+.page-link{
+  color: #000 !important;
+}
+.navbar-custom {
+  background-color: #000; /* Black background */
+  font-family: "Bebas Neue", sans-serif;
+
+}
+.navbar-custom .navbar-nav .nav-link,
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-toggler-icon {
+  color: #fff; /* White text */
+  font-size: 25px;
+}
+
+.navbar-custom .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.1); /* Optional: white border around toggler */
+}
+.navbar-custom .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+
+
+/* General Footer Styling */
+.footer {
+  margin-top: 50px;
+  background-color: #000;
+}
+
+/* Logo Styling */
+.footer-logo {
+  width: 168px;
+  height: 177px;
+}
+
+/* Company Info Styling */
+.company-name {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+}
+
+.company-info, .company-contact {
+  font-family: 'Inter', sans-serif;
+}
+
+/* Divider Styling */
+.footer-divider {
+  border-left: 3px solid white;
+  height: 100%;
+}
+
+/* Areas We Serve Styling */
+.areas-served {
+  border-radius: 22px;
+  padding: 20px; /* Reduced padding */
+  width: 90%; /* Adjust the width to make it smaller */
+  margin: 0 auto; /* Center the box */
+}
+
+
+.areas-title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.areas-description, .area-name {
+  font-family: 'Inter', sans-serif;
+}
+
+.area-name {
+  font-weight: bold;
+}
+
+/* Social Icons Styling */
+.social-icons img {
+  margin-right: 10px;
+  border-radius: 10px;
+}
+#insta{
+  width: 3rem;
+}
+#facebook{
+  width: 3rem;
+}
+
+.card {
+  height: 500px; /* Set a fixed height for all cards */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures elements are spaced evenly */
+  overflow: hidden; /* Hide overflow if content exceeds height */
+  margin-bottom: 30px;
+}
+
+.card-body {
+  flex-grow: 1; /* Ensures the text body takes up available space */
+  overflow: hidden; /* Prevents overflow from longer text */
+}
+
+.card-img-top {
+  width: 100%;
+  height: 250px; /* Set a fixed height for images */
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  flex-grow: 1; /* Allows the text to grow but remain contained within the fixed height */
+  margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* Limits text to 3 lines */
+  -webkit-box-orient: vertical;
+}
+
+
+/* Add a little padding to the card headers for a cleaner look */
+.card-header {
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+}
+
+/* Style for search input group */
+.input-group .form-control {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.input-group .btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+/* Adjust categories list styling */
+.category-link-container li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.category-link-container li a:hover {
+  text-decoration: underline;
+}
+
+
+/* Recent posts styling */
+.recent-posts {
+  padding-left: 0;
+}
+
+.recent-post-item {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.media-object {
+  margin-right: 15px;
+}
+
+.media-object img {
+  width: 100%;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.media-body h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.media-body h4 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.media-body h4 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.media-body h4 a:hover {
+  text-decoration: underline;
+}
+
