@@ -14,7 +14,7 @@ body, html{
 }
 /* Header background with image */
 .bg-header {
-  background-image: url('/img/blog-bg.png'); /* Replace with your image path */
+  background-image: url('../img/blog-bg.png'); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   height: 400px; /* Adjust the height to your preference */
