@@ -1,69 +1,298 @@
-<html>
-    <head>
-        <title>Blogs</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Blogs with Login, Edit, and Delete</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- Quill Editor CSS -->
+    <link href="https://cdn.quilljs.com/1.3.6/quill.snow.css" rel="stylesheet">
+    <script src="https://cdn.quilljs.com/1.3.6/quill.js"></script>
+    <style>
+        #post-form, #logout-btn {
+            display: none; /* Hide the form and logout button by default */
+        }
+    </style>
+</head>
+<body>
 
-     <div class="container mt-2">
-         <div class="card">
-             <div class="card-body">
-                 <form id="post-form">
-                    <center><h3>Make A Blog</h3></center>
-<input type="text" id="title" class="form-control" placeholder="Title (required)">
-<input type="text" id="author" class="form-control" placeholder="Author (optional)">
-<input type="text" id="location" class="form-control" placeholder="Location (optional)">
-<input type="date" id="date" class="form-control" placeholder="Date (required)">
-<textarea id="post" class="form-control" placeholder="What's on your mind..."></textarea>
-<input type="file" class="form-control" id="image" accept="images/*">
-<input type="text" id="category" class="form-control" placeholder="Category (optional)">
-<div class="text-center">
-    <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+<div class="container mt-2">
+    <div class="text-center">
+        <!-- Sign In Form -->
+        <div id="login-form">
+            <h3>Sign In</h3>
+            <div class="form-group">
+                <input type="email" id="login-email" class="form-control" placeholder="Email (required)">
+            </div>
+            <div class="form-group">
+                <input type="password" id="login-password" class="form-control" placeholder="Password (required)">
+            </div>
+            <button id="login-btn" class="btn btn-primary">Login</button>
+            <button id="signup-btn" class="btn btn-secondary">Sign Up</button>
+        </div>
+
+        <!-- Logout Button -->
+        <button id="logout-btn" class="btn btn-danger">Logout</button>
+    </div>
+
+    <!-- Blog Post Form (Hidden until logged in) -->
+    <div class="card mt-4">
+        <div class="card-body">
+            <form id="post-form">
+                <center><h3>Make or Edit A Blog</h3></center>
+                <input type="text" id="title" class="form-control" placeholder="Title (required)">
+                <input type="text" id="author" class="form-control" placeholder="Author (optional)">
+                <input type="text" id="location" class="form-control" placeholder="Location (optional)">
+                <input type="date" id="date" class="form-control" placeholder="Date (required)">
+                
+                <!-- Quill Editor Container -->
+                <div id="editor-container" style="height: 300px;"></div>
+                
+                <input type="file" class="form-control" id="image" accept="images/*">
+                <input type="text" id="category" class="form-control" placeholder="Category (optional)">
+                <div class="text-center mt-3">
+                    <button type="button" class="btn btn-success" onclick="upload()">Upload</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Display Posts for Editing and Deleting -->
+    <div class="mt-4">
+        <h3>Existing Posts</h3>
+        <div id="post-list"></div>
+    </div>
 </div>
 
+<!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
 
-                 </form>
-              </div>
-
-         </div>
-         <div class="row mt-4" id="posts">
-
-         </div>
-
-     </div>
-
-
-
-
-
-
-
-
-
-<!-- The core Firebase JS SDK is always required and must be listed first...make sure you remove -app from below line -->
-    <script src="https://www.gstatic.com/firebasejs/7.14.2/firebase.js"></script>
-
-    <script>
+<script>
     // Your web app's Firebase configuration
     var firebaseConfig = {
-    apiKey: "AIzaSyD9t3-Posz7kwqfPYUNO2Fuqr3reJk85HU",
-    authDomain: "test-blog-267b4.firebaseapp.com",
-    databaseURL: "https://test-blog-267b4-default-rtdb.firebaseio.com",
-    projectId: "test-blog-267b4",
-    storageBucket: "test-blog-267b4.appspot.com",
-    messagingSenderId: "792098821482",
-    appId: "1:792098821482:web:26ff52d2c6907702360113",
-    measurementId: "G-3Z0Q1YWCNH"
+        apiKey: "AIzaSyD9t3-Posz7kwqfPYUNO2Fuqr3reJk85HU",
+        authDomain: "test-blog-267b4.firebaseapp.com",
+        databaseURL: "https://test-blog-267b4-default-rtdb.firebaseio.com",
+        projectId: "test-blog-267b4",
+        storageBucket: "test-blog-267b4.appspot.com",
+        messagingSenderId: "792098821482",
+        appId: "1:792098821482:web:26ff52d2c6907702360113",
+        measurementId: "G-3Z0Q1YWCNH"
     };
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
-    firebase.analytics();
-    </script>
 
+    // Initialize Quill editor
+    var quill = new Quill('#editor-container', {
+        theme: 'snow'  // Specify theme
+    });
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="default.js"></script>
+    // Variables to track the current post being edited
+    var editingPostKey = null;
+
+    // Function to load all existing posts
+    function loadPosts() {
+        var postList = document.getElementById('post-list');
+        postList.innerHTML = ''; // Clear current posts
+
+        // Fetch posts from Firebase
+        firebase.database().ref('blogs/').once('value').then(function(snapshot) {
+            var posts = snapshot.val();
+            for (var key in posts) {
+                if (posts.hasOwnProperty(key)) {
+                    var post = posts[key];
+                    var postDiv = document.createElement('div');
+                    postDiv.classList.add('mb-3');
+
+                    // Post Title, Edit Button, and Delete Button
+                    postDiv.innerHTML = `
+                        <h5>${post.title}</h5>
+                        <button class="btn btn-primary" onclick="editPost('${key}')">Edit</button>
+                        <button class="btn btn-danger" onclick="deletePost('${key}')">Delete</button>
+                    `;
+                    postList.appendChild(postDiv);
+                }
+            }
+        });
+    }
+
+    // Function to edit a post
+    function editPost(postKey) {
+        editingPostKey = postKey; // Store the post key being edited
+
+        // Fetch the post data from Firebase
+        firebase.database().ref('blogs/' + postKey).once('value').then(function(snapshot) {
+            var post = snapshot.val();
+
+            // Populate the form fields
+            document.getElementById('title').value = post.title || '';
+            document.getElementById('author').value = post.author || '';
+            document.getElementById('location').value = post.location || '';
+            document.getElementById('date').value = post.date || '';
+            document.getElementById('category').value = post.category || '';
+            quill.root.innerHTML = post.text || ''; // Populate the Quill editor
+
+            // Show the form
+            document.getElementById('post-form').scrollIntoView();
+        });
+    }
+
+    // Function to delete a post
+    function deletePost(postKey) {
+        // Confirm the deletion
+        var confirmation = confirm("Are you sure you want to delete this post?");
+        if (confirmation) {
+            // Delete the post from Firebase
+            firebase.database().ref('blogs/' + postKey).remove().then(function() {
+                alert("Post deleted successfully!");
+                loadPosts(); // Reload posts after deletion
+            }).catch(function(error) {
+                console.error("Error deleting post: ", error);
+                alert("Error deleting post: " + error.message);
+            });
+        }
+    }
+
+    // Handle sign-up
+    document.getElementById('signup-btn').addEventListener('click', function() {
+        var email = document.getElementById('login-email').value;
+        var password = document.getElementById('login-password').value;
+
+        firebase.auth().createUserWithEmailAndPassword(email, password).then(function(user) {
+            alert("Sign up successful!");
+            login(email, password);
+        }).catch(function(error) {
+            alert(error.message);
+        });
+    });
+
+    // Handle login
+    document.getElementById('login-btn').addEventListener('click', function() {
+        var email = document.getElementById('login-email').value;
+        var password = document.getElementById('login-password').value;
+
+        firebase.auth().signInWithEmailAndPassword(email, password).then(function(user) {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('post-form').style.display = 'block';
+            document.getElementById('logout-btn').style.display = 'inline';
+            loadPosts(); // Load posts after login
+        }).catch(function(error) {
+            alert(error.message);
+        });
+    });
+
+    // Handle logout
+    document.getElementById('logout-btn').addEventListener('click', function() {
+        firebase.auth().signOut().then(function() {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('post-form').style.display = 'none';
+            document.getElementById('logout-btn').style.display = 'none';
+        }).catch(function(error) {
+            alert(error.message);
+        });
+    });
+
+    // Listen for authentication state changes
+    firebase.auth().onAuthStateChanged(function(user) {
+        if (user) {
+            document.getElementById('login-form').style.display = 'none';
+            document.getElementById('post-form').style.display = 'block';
+            document.getElementById('logout-btn').style.display = 'inline';
+            loadPosts(); // Load posts if the user is logged in
+        } else {
+            document.getElementById('login-form').style.display = 'block';
+            document.getElementById('post-form').style.display = 'none';
+            document.getElementById('logout-btn').style.display = 'none';
+        }
+    });
+
+    // Function to upload or update a post
+    function upload() {
+        var title = document.getElementById('title').value;
+        var author = document.getElementById('author').value;
+        var location = document.getElementById('location').value;
+        var date = document.getElementById('date').value;
+        var postContent = quill.root.innerHTML;  // Get content from Quill editor
+        var image = document.getElementById('image').files[0];
+        var category = document.getElementById('category').value;
+
+        if (!title || !date || !postContent) {
+            alert('Please fill in all required fields.');
+            return;
+        }
+
+        // If editing an existing post, update it
+        if (editingPostKey) {
+            var updates = {
+                title: title,
+                author: author,
+                location: location,
+                date: date,
+                text: postContent,
+                category: category
+            };
+
+            // Handle image upload if needed
+            if (image) {
+                var imageName = image.name;
+                var storageRef = firebase.storage().ref('images/' + imageName);
+                var uploadTask = storageRef.put(image);
+
+                uploadTask.on('state_changed', function(snapshot) {
+                    var progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+                    console.log("Upload is " + progress + "% done");
+                }, function(error) {
+                    console.log(error.message);
+                }, function() {
+                    uploadTask.snapshot.ref.getDownloadURL().then(function(downloadURL) {
+                        updates.imageURL = downloadURL;
+                        firebase.database().ref('blogs/' + editingPostKey).update(updates).then(function() {
+                            alert('Post updated successfully!');
+                            loadPosts();
+                        });
+                    });
+                });
+            } else {
+                firebase.database().ref('blogs/' + editingPostKey).update(updates).then(function() {
+                    alert('Post updated successfully!');
+                    loadPosts();
+                });
+            }
+        } else {
+            // If creating a new post
+            var imageName = image ? image.name : null;
+            var storageRef = image ? firebase.storage().ref('images/' + imageName) : null;
+            var uploadTask = image ? storageRef.put(image) : Promise.resolve();
+
+            uploadTask.then(function(snapshot) {
+                if (snapshot) {
+                    return snapshot.ref.getDownloadURL();
+                }
+                return null;
+            }).then(function(downloadURL) {
+                firebase.database().ref('blogs/').push().set({
+                    title: title,
+                    author: author,
+                    location: location,
+                    date: date,
+                    text: postContent,
+                    imageURL: downloadURL || '',
+                    category: category
+                }, function(error) {
+                    if (error) {
+                        alert("Error while uploading");
+                    } else {
+                        alert("Successfully uploaded");
+                        document.getElementById('post-form').reset();
+                        quill.setContents([]);  // Clear Quill editor
+                        loadPosts(); // Reload posts
+                    }
+                });
+            });
+        }
+    }
+</script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </body>
 </html>

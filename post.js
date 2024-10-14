@@ -16,33 +16,43 @@ var firebaseConfig = {
 };
 firebase.initializeApp(firebaseConfig);
 
-/// Function to display post details and remove placeholders
+// Function to display post details
 function displayPostDetails(postKey) {
   firebase.database().ref('blogs/' + postKey).once('value').then(function(snapshot) {
     const postData = snapshot.val();
 
-    // Populate post details
-    document.getElementById('post-title').textContent = postData.title || 'Post Title';
-    document.getElementById('post-date').textContent = postData.date || 'Date Unknown';
-    document.getElementById('post-author').textContent = postData.author || 'Author Unknown';
-    document.getElementById('post-body').innerHTML = postData.text || 'No content available';
+    // Format the date
+    const postDate = new Date(postData.date);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = postDate.toLocaleDateString('en-US', options); // "20 May 2024"
 
-    // Display the post image (if available)
+    // Combine the formatted date with the author's name
+    const authorName = postData.author || "Anonymous";
+    const dateAndAuthor = `${formattedDate} ${authorName}`; // "20 May 2024 Timothy Mims"
+
+    // Populate post details
+    document.getElementById('post-title').textContent = postData.title;
+    document.getElementById('post-date-author').textContent = dateAndAuthor; // Set formatted date and author
+
+    // Populate post body
+    document.getElementById('post-body').innerHTML = postData.text || "No content available.";
+
+    // Display the post image (if available) in both banner and post body
     const imageURL = postData.imageURL;
     if (imageURL) {
-      document.getElementById('post-image').src = imageURL;
-      document.getElementById('post-body-image').src = imageURL;
+      document.getElementById('post-image').src = imageURL; // Banner image
+      document.getElementById('post-body-image').src = imageURL; // Post body image
+    } else {
+      document.getElementById('post-body-image').style.display = 'none'; // Hide image if not available
     }
-
-    // Remove the skeleton classes once content is loaded
-    document.getElementById('post-title').classList.remove('skeleton-text');
-    document.getElementById('post-date').classList.remove('skeleton-text');
-    document.getElementById('post-author').classList.remove('skeleton-text');
-    document.getElementById('post-body').classList.remove('skeleton-text');
-    document.getElementById('post-image').classList.remove('skeleton-image');
-    document.getElementById('post-body-image').classList.remove('skeleton-image');
   });
 }
+
+// Call functions to display post, categories, and recent posts
+displayPostDetails(postKey);
+populateCategories();
+displayRecentPosts();
+
 
 // Function to populate categories
 function populateCategories() {
