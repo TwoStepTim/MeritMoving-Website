@@ -122,7 +122,7 @@ function displayPosts(posts) {
         const plainText = stripHTML(post.text);
         const postExcerpt = document.createElement('p');
         postExcerpt.classList.add('card-text');
-        postExcerpt.textContent = plainText.substring(0, 100) + '...';
+        postExcerpt.textContent = plainText.substring(0, 70) + '...';
 
         const readMoreLink = document.createElement('a');
         readMoreLink.href = 'post.html?key=' + post.key;
