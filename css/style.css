@@ -2,17 +2,20 @@ a{
     text-decoration: none !important;
 }
 h1, h2{
-    font-family: "Bebas Neue", sans-serif ;
+    font-family: "Bebas Neue", sans-serif !important;
 
 }
 body, html{
     overflow-x: hidden !important;
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif !important;
     scroll-behavior: smooth !important;
 
 
 }
+ #RequestButton{
+            font-family: "Bebas Neue", sans-serif !important;
 
+        }
 
 .navbar-custom {
     background-color: #000; /* Black background */
@@ -32,7 +35,35 @@ body, html{
 .navbar-custom .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
+/* Dropdown opens on hover */
+.navbar-nav .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
 
+/* Dropdown menu styling */
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: #ffffff; /* Default background color */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown items */
+.dropdown-menu .dropdown-item:hover {
+    background-color: #ffa500; /* Change to your desired hover color */
+    color: #ffffff; /* Text color when hovered */
+}
+
+/* Optional: Active state styling */
+.dropdown-menu .dropdown-item:active {
+    background-color: #ff8c00; /* Slightly darker for active state */
+    color: #ffffff; /* Text color for active state */
+}
 
 .btn-primary {
     height: 7rem; /* Full height */

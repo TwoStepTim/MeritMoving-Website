@@ -3,15 +3,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+   .services-section {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.service-card {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .card-image {
+    transform: scale(1.1);
+}
+
+.card-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.card-content .btn {
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.card-content .btn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+    
 </head>
 <body>
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
-<script>
-  hbspt.forms.create({
-    region: "na1",
-    portalId: "47510379",
-    formId: "ce2340f3-2666-4998-9a86-6f43569d9335"
-  });
-</script>
+  <section class="services-section">
+    <div class="container">
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="card-image" style="background-image: url('img/local-moving.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Local Moving</h3>
+                        <p>Safe and efficient moves across Raleigh and surrounding areas.</p>
+                        <a href="local-moving.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="card-image" style="background-image: url('img/furniture-delivery.jpg');"></div>
+                    <div class="card-content">
+                        <h3>Furniture Delivery</h3>
+                        <p>Reliable and careful delivery of furniture and specialty items.</p>
+                        <a href="furniture-delivery.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="service-card">
+                    <div class="card-image" style="background-image: url('img/college-moving.jpg');"></div>
+                    <div class="card-content">
+                        <h3>College Moving</h3>
+                        <p>Affordable and timely moves for students and families.</p>
+                        <a href="college-moving.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" async></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" async></script>
 </body>
 </html>
